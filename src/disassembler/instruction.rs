@@ -1,5 +1,7 @@
 use std::fmt::Display;
 
+use super::operand::Operand;
+
 pub enum Mnemonic {
     PUSH,
     POP,
@@ -37,13 +39,18 @@ impl Display for Mnemonic {
 }
 
 pub struct Instruction {
-    address: u32,
+    address: usize,
     mnemonic: Mnemonic,
+    operands: Vec<Operand>,
 }
 
 impl Instruction {
     /// Creates a new instruction.
-    pub fn new(address: u32, mnemonic: Mnemonic) -> Instruction {
-        Instruction { address, mnemonic }
+    pub fn new(address: usize, mnemonic: Mnemonic, operands: Vec<Operand>) -> Instruction {
+        Instruction {
+            address,
+            mnemonic,
+            operands,
+        }
     }
 }

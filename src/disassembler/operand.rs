@@ -1,5 +1,16 @@
 use super::instruction::Instruction;
 
+pub enum Operand {
+    Literal(Literal),
+    GlobalVariable(GlobalVariable),
+    Parameter(Parameter),
+}
+
+enum Literal {
+    ZERO,
+    INFINITY,
+}
+
 pub trait Variable {
     /// Returns the name of the variable.
     fn name(&self) -> &str;
@@ -29,13 +40,13 @@ impl Variable for GlobalVariable {
 }
 
 pub struct Parameter {
-    index: u32,
+    index: usize,
     formatted_name: String,
 }
 
 impl Parameter {
     /// Creates a new parameter.
-    pub fn new(index: u32) -> Parameter {
+    pub fn new(index: usize) -> Parameter {
         let formatted_name = format!("param_{index}");
         Parameter {
             index,

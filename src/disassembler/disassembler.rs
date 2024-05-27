@@ -1,4 +1,15 @@
-use super::{instruction::Instruction, operand::Function};
+use std::collections::HashSet;
+
+use super::{
+    instruction::{Instruction, Mnemonic},
+    operand::{Function, GlobalVariable, Operand, Parameter},
+};
+use lazy_static::lazy_static;
+
+lazy_static! {
+    static ref RESERVED_ALPHANUMERIC_OPCODES: HashSet<char> =
+        vec!['m', 'M', '0', '1'].into_iter().collect();
+}
 
 pub struct Disassembler {
     bytecode: Vec<char>,
@@ -64,7 +75,47 @@ impl Disassembler {
     }
 
     /// Disassembles the current bytecode.
-    pub fn disassemble(&self) {
-        todo!()
+    pub fn disassemble(&mut self) {
+        let bytecode_length = self.bytecode.len();
+        while self.pos < bytecode_length {
+            let address = self.base_address + self.pos;
+            let opcode = self.read_byte();
+
+            // delimiter means stop disassembling
+            if opcode == self.delimiter {
+                if let Some(_) = self.current_function_index {
+                    let instr = Instruction::new(address, Mnemonic::RET, Vec::new());
+                    self.add_instruction(instr);
+                    self.current_function_index = None;
+                }
+                continue;
+            }
+            // push global variable or parameter
+            else if opcode.is_alphanumeric() && !RESERVED_ALPHANUMERIC_OPCODES.contains(&opcode) {
+                // letters correspond to global variables
+                if opcode.is_alphabetic() {
+                    let var = Operand::GlobalVariable(GlobalVariable::new(opcode.to_string()));
+                    let instr = Instruction::new(address, Mnemonic::PUSH, vec![var]);
+                    self.add_instruction(instr);
+                }
+                // numbers correspond to parameters
+                else {
+                    let param_index = (opcode as usize) - 50;
+                    let param = Operand::Parameter(Parameter::new(param_index));
+                    let instr = Instruction::new(address, Mnemonic::PUSH, vec![param]);
+                    self.add_instruction(instr);
+                }
+            }
+            // create function
+            else if opcode == ':' {
+            }
+            // call function
+            else if opcode == '^' {
+            } else {
+                match opcode {
+                    _ => {}
+                }
+            }
+        }
     }
 }
