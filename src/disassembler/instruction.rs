@@ -2,6 +2,7 @@ use std::fmt::Display;
 
 use super::operand::Operand;
 
+#[derive(Debug)]
 pub enum Mnemonic {
     PUSH,
     POP,
@@ -38,6 +39,7 @@ impl Display for Mnemonic {
     }
 }
 
+#[derive(Debug)]
 pub struct Instruction {
     address: usize,
     mnemonic: Mnemonic,

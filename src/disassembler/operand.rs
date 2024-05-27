@@ -1,12 +1,14 @@
 use super::instruction::Instruction;
 
+#[derive(Debug)]
 pub enum Operand {
     Literal(Literal),
     GlobalVariable(GlobalVariable),
     Parameter(Parameter),
 }
 
-enum Literal {
+#[derive(Debug)]
+pub enum Literal {
     ZERO,
     INFINITY,
 }
@@ -16,6 +18,7 @@ pub trait Variable {
     fn name(&self) -> &str;
 }
 
+#[derive(Debug)]
 pub struct GlobalVariable {
     name: String,
     formatted_name: String,
@@ -39,6 +42,7 @@ impl Variable for GlobalVariable {
     }
 }
 
+#[derive(Debug)]
 pub struct Parameter {
     index: usize,
     formatted_name: String,
@@ -62,6 +66,7 @@ impl Variable for Parameter {
     }
 }
 
+#[derive(Debug)]
 pub struct Function {
     address: usize,
     id: String,
@@ -84,8 +89,8 @@ impl Function {
     }
 
     /// Adds an instruction to the function.
-    pub fn add_instruction(&self, instr: Instruction) {
-        todo!()
+    pub fn add_instruction(&mut self, instr: Instruction) {
+        self.instructions.push(instr);
     }
 
     // TODO: implement other methods

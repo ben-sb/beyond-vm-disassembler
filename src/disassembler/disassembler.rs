@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 use super::{
     instruction::{Instruction, Mnemonic},
-    operand::{Function, GlobalVariable, Operand, Parameter},
+    operand::{Function, GlobalVariable, Literal, Operand, Parameter},
 };
 use lazy_static::lazy_static;
 
@@ -53,7 +53,8 @@ impl Disassembler {
     }
 
     /// Adds an instruction to the current function being disassembled.
-    fn add_instruction(&self, instr: Instruction) {
+    fn add_instruction(&mut self, instr: Instruction) {
+        println!("{:?}", instr);
         match self.current_function_index {
             Some(i) => self.functions[i].add_instruction(instr),
             None => panic!("Tried to add an instruction when there is no current function"),
@@ -92,6 +93,13 @@ impl Disassembler {
             }
             // push global variable or parameter
             else if opcode.is_alphanumeric() && !RESERVED_ALPHANUMERIC_OPCODES.contains(&opcode) {
+                let next_byte = self.peek_byte();
+                if next_byte == '=' {
+                    self.advance();
+                    // this never appears in the sample
+                    panic!("Storing variables as result of subroutines not implemented")
+                }
+
                 // letters correspond to global variables
                 if opcode.is_alphabetic() {
                     let var = Operand::GlobalVariable(GlobalVariable::new(opcode.to_string()));
@@ -108,11 +116,68 @@ impl Disassembler {
             }
             // create function
             else if opcode == ':' {
+                let mut name = String::new();
+                loop {
+                    let next_byte = self.read_byte();
+                    if next_byte == ':' {
+                        break;
+                    } else {
+                        name.push(next_byte);
+                    }
+                }
+
+                let func = Function::new(address, name, 8);
+                self.functions.push(func);
+                self.current_function_index = Some(self.num_functions);
+                self.num_functions += 1;
             }
             // call function
             else if opcode == '^' {
             } else {
                 match opcode {
+                    '+' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::ADD, Vec::new()))
+                    }
+                    '-' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::SUB, Vec::new()))
+                    }
+                    '*' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::MUL, Vec::new()))
+                    }
+                    '/' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::DIV, Vec::new()))
+                    }
+                    'm' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::MIN, Vec::new()))
+                    }
+                    'M' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::MAX, Vec::new()))
+                    }
+                    '0' => {
+                        let literal = Operand::Literal(Literal::ZERO);
+                        self.add_instruction(Instruction::new(
+                            address,
+                            Mnemonic::PUSH,
+                            vec![literal],
+                        ))
+                    }
+                    '1' => {
+                        let literal = Operand::Literal(Literal::INFINITY);
+                        self.add_instruction(Instruction::new(
+                            address,
+                            Mnemonic::PUSH,
+                            vec![literal],
+                        ))
+                    }
+                    '\'' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::FRAC, Vec::new()))
+                    }
+                    '!' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::NEG, Vec::new()))
+                    }
+                    '.' => {
+                        self.add_instruction(Instruction::new(address, Mnemonic::POP, Vec::new()))
+                    }
                     _ => {}
                 }
             }
