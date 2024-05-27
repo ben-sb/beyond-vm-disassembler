@@ -1,5 +1,3 @@
-use super::instruction::Instruction;
-
 #[derive(Debug)]
 pub enum Operand {
     Literal(Literal),

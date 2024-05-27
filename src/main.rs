@@ -1,8 +1,9 @@
 use std::fs;
 
-use crate::disassembler::{disassembler::Disassembler, instruction::Instruction};
+use crate::disassembler::disassembler::Disassembler;
 
 pub mod disassembler;
+pub mod symbolic;
 
 fn main() {
     let bytecode = fs::read_to_string("input/bytecode.txt").expect("Failed to read bytecode");
