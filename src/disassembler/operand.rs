@@ -5,6 +5,7 @@ pub enum Operand {
     Literal(Literal),
     GlobalVariable(GlobalVariable),
     Parameter(Parameter),
+    FunctionReference(FunctionReference),
 }
 
 #[derive(Debug)]
@@ -88,15 +89,46 @@ impl Function {
         }
     }
 
+    /// Returns the ID of the function.
+    pub fn id(&self) -> &str {
+        &self.id
+    }
+
     /// Adds an instruction to the function.
     pub fn add_instruction(&mut self, instr: Instruction) {
         self.instructions.push(instr);
     }
 
+    /// Returns a reference to the function. Can be used for referring
+    /// to the function within instructions.
+    pub fn get_reference(&self) -> FunctionReference {
+        FunctionReference::new(self.id.clone())
+    }
     // TODO: implement other methods
 }
 
 impl Variable for Function {
+    /// Returns the name of the variable.
+    fn name(&self) -> &str {
+        &self.formatted_name
+    }
+}
+
+#[derive(Debug)]
+pub struct FunctionReference {
+    id: String,
+    formatted_name: String,
+}
+
+impl FunctionReference {
+    /// Creates a new function reference.
+    pub fn new(id: String) -> FunctionReference {
+        let formatted_name = format!("func_{id}");
+        FunctionReference { id, formatted_name }
+    }
+}
+
+impl Variable for FunctionReference {
     /// Returns the name of the variable.
     fn name(&self) -> &str {
         &self.formatted_name

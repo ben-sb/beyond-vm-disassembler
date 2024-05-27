@@ -1,8 +1,8 @@
-use std::collections::HashSet;
+use std::{cmp::min, collections::HashSet};
 
 use super::{
     instruction::{Instruction, Mnemonic},
-    operand::{Function, GlobalVariable, Literal, Operand, Parameter},
+    operand::{Function, GlobalVariable, Literal, Operand, Parameter, Variable},
 };
 use lazy_static::lazy_static;
 
@@ -133,6 +133,28 @@ impl Disassembler {
             }
             // call function
             else if opcode == '^' {
+                // Access next 10 chars as a lookahead buffer. Function IDs are <= 3
+                // chars so this is more than long enough
+                let next_bytecode: String = self.bytecode
+                    [self.pos..min(self.pos + 10, bytecode_length)]
+                    .iter()
+                    .collect();
+
+                // find which function is being called
+                let mut callee: Option<&Function> = None;
+                for func in &self.functions {
+                    if next_bytecode.starts_with(func.id()) {
+                        callee = Some(func);
+                    }
+                }
+
+                if let Some(func) = callee {
+                    let operands = vec![Operand::FunctionReference(func.get_reference())];
+                    let instr = Instruction::new(address, Mnemonic::CALL, operands);
+                    self.add_instruction(instr);
+                } else {
+                    panic!("Unknown function callee");
+                }
             } else {
                 match opcode {
                     '+' => {
