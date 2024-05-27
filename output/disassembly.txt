@@ -1,0 +1,2833 @@
+function func_i(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x3:	pop         
+	0x4:	pop         
+	0x5:	pop         
+	0x6:	push        0
+	0x7:	push        param_1
+	0x8:	push        param_1
+	0x9:	mul         
+	0xa:	mul         
+	0xb:	push        0
+	0xc:	push        param_1
+	0xd:	frac        
+	0xe:	push        param_1
+	0xf:	frac        
+	0x10:	mul         
+	0x11:	mul         
+	0x12:	min         
+	0x13:	push        param_2
+	0x14:	sub         
+	0x15:	push        param_1
+	0x16:	frac        
+	0x17:	push        Infinity
+	0x18:	neg         
+	0x19:	max         
+	0x1a:	push        param_1
+	0x1b:	frac        
+	0x1c:	push        Infinity
+	0x1d:	min         
+	0x1e:	sub         
+	0x1f:	push        param_1
+	0x20:	push        Infinity
+	0x21:	neg         
+	0x22:	max         
+	0x23:	push        param_1
+	0x24:	push        Infinity
+	0x25:	min         
+	0x26:	sub         
+	0x27:	add         
+	0x28:	frac        
+	0x29:	push        param_0
+	0x2a:	sub         
+	0x2b:	min         
+	0x2c:	ret         
+
+function func_n00(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x32:	frac        
+	0x33:	push        Infinity
+	0x34:	sub         
+	0x35:	ret         
+
+function func_n10(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x3b:	frac        
+	0x3c:	push        Infinity
+	0x3d:	add         
+	0x3e:	ret         
+
+function func_n01(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x44:	push        Infinity
+	0x45:	sub         
+	0x46:	ret         
+
+function func_n11(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x4c:	push        Infinity
+	0x4d:	add         
+	0x4e:	ret         
+
+function func_g1(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x53:	pop         
+	0x54:	pop         
+	0x55:	push        Infinity
+	0x56:	push        0
+	0x57:	mul         
+	0x58:	push        param_0
+	0x59:	call        func_n10
+	0x5a:	push        global_n
+	0x5b:	push        Infinity
+	0x5c:	push        0
+	0x5d:	push        param_1
+	0x5e:	call        func_n10
+	0x5f:	push        global_n
+	0x60:	push        Infinity
+	0x61:	push        0
+	0x62:	min         
+	0x63:	push        Infinity
+	0x64:	call        func_i
+	0x65:	push        global_i
+	0x66:	push        param_0
+	0x67:	call        func_n10
+	0x68:	push        global_n
+	0x69:	push        Infinity
+	0x6a:	push        0
+	0x6b:	push        param_1
+	0x6c:	call        func_n11
+	0x6d:	push        global_n
+	0x6e:	push        Infinity
+	0x6f:	push        Infinity
+	0x70:	min         
+	0x71:	push        Infinity
+	0x72:	call        func_i
+	0x73:	push        global_i
+	0x74:	push        param_0
+	0x75:	call        func_n11
+	0x76:	push        global_n
+	0x77:	push        Infinity
+	0x78:	push        Infinity
+	0x79:	push        param_1
+	0x7a:	call        func_n10
+	0x7b:	push        global_n
+	0x7c:	push        Infinity
+	0x7d:	push        0
+	0x7e:	min         
+	0x7f:	push        Infinity
+	0x80:	call        func_i
+	0x81:	push        global_i
+	0x82:	push        param_0
+	0x83:	call        func_n01
+	0x84:	push        global_n
+	0x85:	push        0
+	0x86:	push        Infinity
+	0x87:	push        param_1
+	0x88:	call        func_n01
+	0x89:	push        global_n
+	0x8a:	push        0
+	0x8b:	push        Infinity
+	0x8c:	min         
+	0x8d:	push        0
+	0x8e:	neg         
+	0x8f:	call        func_i
+	0x90:	push        global_i
+	0x91:	push        param_0
+	0x92:	call        func_n11
+	0x93:	push        global_n
+	0x94:	push        Infinity
+	0x95:	push        Infinity
+	0x96:	push        param_1
+	0x97:	call        func_n01
+	0x98:	push        global_n
+	0x99:	push        0
+	0x9a:	push        Infinity
+	0x9b:	min         
+	0x9c:	push        0
+	0x9d:	neg         
+	0x9e:	call        func_i
+	0x9f:	push        global_i
+	0xa0:	push        param_0
+	0xa1:	call        func_n01
+	0xa2:	push        global_n
+	0xa3:	push        0
+	0xa4:	push        Infinity
+	0xa5:	push        param_1
+	0xa6:	call        func_n11
+	0xa7:	push        global_n
+	0xa8:	push        Infinity
+	0xa9:	push        Infinity
+	0xaa:	min         
+	0xab:	push        0
+	0xac:	neg         
+	0xad:	call        func_i
+	0xae:	push        global_i
+	0xaf:	push        param_0
+	0xb0:	call        func_n11
+	0xb1:	push        global_n
+	0xb2:	push        Infinity
+	0xb3:	push        Infinity
+	0xb4:	push        param_1
+	0xb5:	call        func_n11
+	0xb6:	push        global_n
+	0xb7:	push        Infinity
+	0xb8:	push        Infinity
+	0xb9:	min         
+	0xba:	push        0
+	0xbb:	call        func_i
+	0xbc:	push        global_i
+	0xbd:	push        Infinity
+	0xbe:	neg         
+	0xbf:	max         
+	0xc0:	ret         
+
+function func_g2(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0xc5:	call        func_g1
+	0xc6:	push        global_g
+	0xc7:	push        Infinity
+	0xc8:	frac        
+	0xc9:	neg         
+	0xca:	ret         
+
+function func_g3(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0xcf:	pop         
+	0xd0:	pop         
+	0xd1:	push        param_0
+	0xd2:	frac        
+	0xd3:	neg         
+	0xd4:	push        param_1
+	0xd5:	frac        
+	0xd6:	neg         
+	0xd7:	call        func_g1
+	0xd8:	push        global_g
+	0xd9:	push        Infinity
+	0xda:	ret         
+
+function func_g4(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0xdf:	pop         
+	0xe0:	pop         
+	0xe1:	push        param_0
+	0xe2:	push        param_1
+	0xe3:	call        func_g3
+	0xe4:	push        global_g
+	0xe5:	push        param_1
+	0xe6:	push        param_0
+	0xe7:	push        param_1
+	0xe8:	call        func_g1
+	0xe9:	push        global_g
+	0xea:	push        Infinity
+	0xeb:	call        func_g2
+	0xec:	push        global_g
+	0xed:	push        param_0
+	0xee:	ret         
+
+function func_x1(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0xf3:	call        func_g4
+	0xf4:	push        global_g
+	0xf5:	push        param_2
+	0xf6:	call        func_g4
+	0xf7:	push        global_g
+	0xf8:	push        param_2
+	0xf9:	ret         
+
+function func_x2(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0xfe:	pop         
+	0xff:	pop         
+	0x100:	pop         
+	0x101:	push        param_0
+	0x102:	push        param_1
+	0x103:	call        func_g4
+	0x104:	push        global_g
+	0x105:	push        param_2
+	0x106:	push        param_2
+	0x107:	call        func_g2
+	0x108:	push        global_g
+	0x109:	push        param_0
+	0x10a:	push        param_0
+	0x10b:	push        param_1
+	0x10c:	call        func_g2
+	0x10d:	push        global_g
+	0x10e:	push        param_0
+	0x10f:	call        func_g3
+	0x110:	push        global_g
+	0x111:	push        param_1
+	0x112:	ret         
+
+function func_sg(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x117:	pop         
+	0x118:	push        0
+	0x119:	push        param_0
+	0x11a:	push        Infinity
+	0x11b:	add         
+	0x11c:	push        param_0
+	0x11d:	frac        
+	0x11e:	push        Infinity
+	0x11f:	add         
+	0x120:	add         
+	0x121:	push        Infinity
+	0x122:	call        func_i
+	0x123:	push        global_i
+	0x124:	ret         
+
+function func_x3(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x129:	pop         
+	0x12a:	pop         
+	0x12b:	pop         
+	0x12c:	push        param_0
+	0x12d:	push        param_0
+	0x12e:	mul         
+	0x12f:	push        param_1
+	0x130:	push        param_1
+	0x131:	mul         
+	0x132:	push        param_2
+	0x133:	call        func_x1
+	0x134:	push        global_x
+	0x135:	push        Infinity
+	0x136:	ret         
+
+function func_x4(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x13b:	pop         
+	0x13c:	pop         
+	0x13d:	pop         
+	0x13e:	push        0
+	0x13f:	push        param_0
+	0x140:	call        func_sg
+	0x141:	push        global_s
+	0x142:	push        global_g
+	0x143:	push        param_1
+	0x144:	call        func_sg
+	0x145:	push        global_s
+	0x146:	push        global_g
+	0x147:	push        param_0
+	0x148:	push        param_0
+	0x149:	mul         
+	0x14a:	push        param_1
+	0x14b:	push        param_1
+	0x14c:	mul         
+	0x14d:	push        param_2
+	0x14e:	call        func_x2
+	0x14f:	push        global_x
+	0x150:	push        param_0
+	0x151:	call        func_x1
+	0x152:	push        global_x
+	0x153:	push        Infinity
+	0x154:	push        0
+	0x155:	mul         
+	0x156:	push        0
+	0x157:	neg         
+	0x158:	call        func_i
+	0x159:	push        global_i
+	0x15a:	ret         
+
+function func_x5(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x15f:	pop         
+	0x160:	pop         
+	0x161:	pop         
+	0x162:	push        param_0
+	0x163:	call        func_sg
+	0x164:	push        global_s
+	0x165:	push        global_g
+	0x166:	push        param_1
+	0x167:	call        func_sg
+	0x168:	push        global_s
+	0x169:	push        global_g
+	0x16a:	push        param_0
+	0x16b:	push        param_0
+	0x16c:	mul         
+	0x16d:	push        param_1
+	0x16e:	push        param_1
+	0x16f:	mul         
+	0x170:	push        param_2
+	0x171:	call        func_x2
+	0x172:	push        global_x
+	0x173:	push        param_0
+	0x174:	call        func_x2
+	0x175:	push        global_x
+	0x176:	push        param_0
+	0x177:	ret         
+
+function func_x6(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x17c:	pop         
+	0x17d:	pop         
+	0x17e:	pop         
+	0x17f:	push        param_2
+	0x180:	push        param_1
+	0x181:	push        param_0
+	0x182:	call        func_x3
+	0x183:	push        global_x
+	0x184:	push        param_1
+	0x185:	push        param_2
+	0x186:	push        param_1
+	0x187:	push        param_0
+	0x188:	call        func_x4
+	0x189:	push        global_x
+	0x18a:	push        param_2
+	0x18b:	call        func_g3
+	0x18c:	push        global_g
+	0x18d:	push        param_1
+	0x18e:	ret         
+
+function func_xb(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x193:	pop         
+	0x194:	pop         
+	0x195:	pop         
+	0x196:	pop         
+	0x197:	pop         
+	0x198:	pop         
+	0x199:	pop         
+	0x19a:	pop         
+	0x19b:	push        0
+	0x19c:	push        param_0
+	0x19d:	push        param_4
+	0x19e:	call        func_x5
+	0x19f:	push        global_x
+	0x1a0:	push        param_3
+	0x1a1:	push        param_1
+	0x1a2:	push        param_5
+	0x1a3:	call        func_x5
+	0x1a4:	push        global_x
+	0x1a5:	push        param_3
+	0x1a6:	push        param_2
+	0x1a7:	push        param_6
+	0x1a8:	call        func_x5
+	0x1a9:	push        global_x
+	0x1aa:	push        param_3
+	0x1ab:	push        param_3
+	0x1ac:	push        param_7
+	0x1ad:	call        func_x6
+	0x1ae:	push        global_x
+	0x1af:	push        param_4
+	0x1b0:	push        0
+	0x1b1:	push        param_0
+	0x1b2:	push        param_4
+	0x1b3:	call        func_x5
+	0x1b4:	push        global_x
+	0x1b5:	push        param_3
+	0x1b6:	push        param_1
+	0x1b7:	push        param_5
+	0x1b8:	call        func_x5
+	0x1b9:	push        global_x
+	0x1ba:	push        param_3
+	0x1bb:	push        param_2
+	0x1bc:	push        param_6
+	0x1bd:	call        func_x6
+	0x1be:	push        global_x
+	0x1bf:	push        param_4
+	0x1c0:	push        0
+	0x1c1:	push        param_0
+	0x1c2:	push        param_4
+	0x1c3:	call        func_x5
+	0x1c4:	push        global_x
+	0x1c5:	push        param_3
+	0x1c6:	push        param_1
+	0x1c7:	push        param_5
+	0x1c8:	call        func_x6
+	0x1c9:	push        global_x
+	0x1ca:	push        param_4
+	0x1cb:	push        0
+	0x1cc:	push        param_0
+	0x1cd:	push        param_4
+	0x1ce:	call        func_x6
+	0x1cf:	push        global_x
+	0x1d0:	push        param_4
+	0x1d1:	ret         
+
+function func_gb4(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x1d7:	pop         
+	0x1d8:	pop         
+	0x1d9:	pop         
+	0x1da:	pop         
+	0x1db:	pop         
+	0x1dc:	pop         
+	0x1dd:	pop         
+	0x1de:	pop         
+	0x1df:	push        param_3
+	0x1e0:	push        param_7
+	0x1e1:	call        func_g4
+	0x1e2:	push        global_g
+	0x1e3:	push        param_2
+	0x1e4:	push        param_2
+	0x1e5:	push        param_6
+	0x1e6:	call        func_g4
+	0x1e7:	push        global_g
+	0x1e8:	push        param_2
+	0x1e9:	push        param_1
+	0x1ea:	push        param_5
+	0x1eb:	call        func_g4
+	0x1ec:	push        global_g
+	0x1ed:	push        param_2
+	0x1ee:	push        param_0
+	0x1ef:	push        param_4
+	0x1f0:	call        func_g4
+	0x1f1:	push        global_g
+	0x1f2:	push        param_2
+	0x1f3:	ret         
+
+function func_gb2(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x1f9:	pop         
+	0x1fa:	pop         
+	0x1fb:	pop         
+	0x1fc:	pop         
+	0x1fd:	pop         
+	0x1fe:	pop         
+	0x1ff:	pop         
+	0x200:	pop         
+	0x201:	push        param_3
+	0x202:	push        param_7
+	0x203:	call        func_g2
+	0x204:	push        global_g
+	0x205:	push        param_0
+	0x206:	push        param_2
+	0x207:	push        param_6
+	0x208:	call        func_g2
+	0x209:	push        global_g
+	0x20a:	push        param_0
+	0x20b:	push        param_1
+	0x20c:	push        param_5
+	0x20d:	call        func_g2
+	0x20e:	push        global_g
+	0x20f:	push        param_0
+	0x210:	push        param_0
+	0x211:	push        param_4
+	0x212:	call        func_g2
+	0x213:	push        global_g
+	0x214:	push        param_0
+	0x215:	ret         
+
+function func_gb3(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x21b:	pop         
+	0x21c:	pop         
+	0x21d:	pop         
+	0x21e:	pop         
+	0x21f:	pop         
+	0x220:	pop         
+	0x221:	pop         
+	0x222:	pop         
+	0x223:	push        param_3
+	0x224:	push        param_7
+	0x225:	call        func_g3
+	0x226:	push        global_g
+	0x227:	push        param_1
+	0x228:	push        param_2
+	0x229:	push        param_6
+	0x22a:	call        func_g3
+	0x22b:	push        global_g
+	0x22c:	push        param_1
+	0x22d:	push        param_1
+	0x22e:	push        param_5
+	0x22f:	call        func_g3
+	0x230:	push        global_g
+	0x231:	push        param_1
+	0x232:	push        param_0
+	0x233:	push        param_4
+	0x234:	call        func_g3
+	0x235:	push        global_g
+	0x236:	push        param_1
+	0x237:	ret         
+
+function func_nb(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x23c:	push        param_0
+	0x23d:	push        param_1
+	0x23e:	push        param_2
+	0x23f:	push        param_3
+	0x240:	push        Infinity
+	0x241:	neg         
+	0x242:	push        Infinity
+	0x243:	neg         
+	0x244:	push        Infinity
+	0x245:	neg         
+	0x246:	push        Infinity
+	0x247:	neg         
+	0x248:	call        func_gb4
+	0x249:	push        global_g
+	0x24a:	push        global_b
+	0x24b:	push        param_2
+	0x24c:	push        0
+	0x24d:	push        0
+	0x24e:	push        0
+	0x24f:	push        Infinity
+	0x250:	call        func_xb
+	0x251:	push        global_x
+	0x252:	push        global_b
+	0x253:	ret         
+
+function func_o1r(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x259:	pop         
+	0x25a:	push        Infinity
+	0x25b:	push        param_0
+	0x25c:	call        func_n00
+	0x25d:	push        global_n
+	0x25e:	push        0
+	0x25f:	push        0
+	0x260:	push        0
+	0x261:	call        func_i
+	0x262:	push        global_i
+	0x263:	ret         
+
+function func_fnz(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x269:	pop         
+	0x26a:	push        Infinity
+	0x26b:	neg         
+	0x26c:	push        param_0
+	0x26d:	push        0
+	0x26e:	call        func_i
+	0x26f:	push        global_i
+	0x270:	push        Infinity
+	0x271:	neg         
+	0x272:	push        param_0
+	0x273:	push        0
+	0x274:	call        func_i
+	0x275:	push        global_i
+	0x276:	push        Infinity
+	0x277:	neg         
+	0x278:	push        param_0
+	0x279:	push        0
+	0x27a:	call        func_i
+	0x27b:	push        global_i
+	0x27c:	push        Infinity
+	0x27d:	neg         
+	0x27e:	push        param_0
+	0x27f:	push        0
+	0x280:	call        func_i
+	0x281:	push        global_i
+	0x282:	ret         
+
+function func_ftz(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x288:	call        func_g3
+	0x289:	push        global_g
+	0x28a:	push        param_1
+	0x28b:	call        func_g3
+	0x28c:	push        global_g
+	0x28d:	push        param_1
+	0x28e:	call        func_g3
+	0x28f:	push        global_g
+	0x290:	push        param_1
+	0x291:	call        func_o1r
+	0x292:	push        global_o
+	0x293:	push        Infinity
+	0x294:	push        global_r
+	0x295:	call        func_n01
+	0x296:	push        global_n
+	0x297:	push        0
+	0x298:	push        Infinity
+	0x299:	call        func_fnz
+	0x29a:	push        global_f
+	0x29b:	push        global_n
+	0x29c:	push        global_z
+	0x29d:	ret         
+
+function func_l(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x2a1:	pop         
+	0x2a2:	pop         
+	0x2a3:	pop         
+	0x2a4:	pop         
+	0x2a5:	pop         
+	0x2a6:	pop         
+	0x2a7:	pop         
+	0x2a8:	pop         
+	0x2a9:	push        param_7
+	0x2aa:	push        param_6
+	0x2ab:	push        param_5
+	0x2ac:	push        param_4
+	0x2ad:	call        func_ftz
+	0x2ae:	push        global_f
+	0x2af:	push        global_t
+	0x2b0:	push        global_z
+	0x2b1:	push        param_3
+	0x2b2:	push        param_2
+	0x2b3:	push        param_1
+	0x2b4:	push        param_0
+	0x2b5:	call        func_gb2
+	0x2b6:	push        global_g
+	0x2b7:	push        global_b
+	0x2b8:	push        param_0
+	0x2b9:	call        func_gb3
+	0x2ba:	push        global_g
+	0x2bb:	push        global_b
+	0x2bc:	push        param_1
+	0x2bd:	push        param_7
+	0x2be:	push        param_6
+	0x2bf:	push        param_5
+	0x2c0:	push        param_4
+	0x2c1:	push        Infinity
+	0x2c2:	neg         
+	0x2c3:	push        Infinity
+	0x2c4:	neg         
+	0x2c5:	push        Infinity
+	0x2c6:	neg         
+	0x2c7:	push        Infinity
+	0x2c8:	neg         
+	0x2c9:	call        func_xb
+	0x2ca:	push        global_x
+	0x2cb:	push        global_b
+	0x2cc:	ret         
+
+function func_al(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0x2d1:	pop         
+	0x2d2:	pop         
+	0x2d3:	pop         
+	0x2d4:	pop         
+	0x2d5:	push        0
+	0x2d6:	push        0
+	0x2d7:	push        0
+	0x2d8:	push        0
+	0x2d9:	push        param_3
+	0x2da:	push        param_2
+	0x2db:	push        param_1
+	0x2dc:	push        param_0
+	0x2dd:	push        Infinity
+	0x2de:	push        0
+	0x2df:	neg         
+	0x2e0:	push        Infinity
+	0x2e1:	neg         
+	0x2e2:	push        Infinity
+	0x2e3:	call        func_l
+	0x2e4:	push        global_l
+	0x2e5:	push        Infinity
+	0x2e6:	neg         
+	0x2e7:	push        Infinity
+	0x2e8:	neg         
+	0x2e9:	push        Infinity
+	0x2ea:	neg         
+	0x2eb:	push        Infinity
+	0x2ec:	call        func_l
+	0x2ed:	push        global_l
+	0x2ee:	push        Infinity
+	0x2ef:	push        0
+	0x2f0:	push        0
+	0x2f1:	neg         
+	0x2f2:	push        Infinity
+	0x2f3:	neg         
+	0x2f4:	call        func_l
+	0x2f5:	push        global_l
+	0x2f6:	push        Infinity
+	0x2f7:	push        Infinity
+	0x2f8:	neg         
+	0x2f9:	push        0
+	0x2fa:	neg         
+	0x2fb:	push        0
+	0x2fc:	call        func_l
+	0x2fd:	push        global_l
+	0x2fe:	push        Infinity
+	0x2ff:	push        0
+	0x300:	neg         
+	0x301:	push        Infinity
+	0x302:	push        Infinity
+	0x303:	call        func_l
+	0x304:	push        global_l
+	0x305:	push        Infinity
+	0x306:	neg         
+	0x307:	push        0
+	0x308:	neg         
+	0x309:	push        0
+	0x30a:	push        Infinity
+	0x30b:	call        func_l
+	0x30c:	push        global_l
+	0x30d:	push        0
+	0x30e:	neg         
+	0x30f:	push        Infinity
+	0x310:	neg         
+	0x311:	push        Infinity
+	0x312:	neg         
+	0x313:	push        Infinity
+	0x314:	call        func_l
+	0x315:	push        global_l
+	0x316:	push        Infinity
+	0x317:	push        Infinity
+	0x318:	push        0
+	0x319:	neg         
+	0x31a:	push        0
+	0x31b:	call        func_l
+	0x31c:	push        global_l
+	0x31d:	push        0
+	0x31e:	neg         
+	0x31f:	push        0
+	0x320:	neg         
+	0x321:	push        Infinity
+	0x322:	push        Infinity
+	0x323:	neg         
+	0x324:	call        func_l
+	0x325:	push        global_l
+	0x326:	push        0
+	0x327:	push        Infinity
+	0x328:	push        Infinity
+	0x329:	neg         
+	0x32a:	push        0
+	0x32b:	neg         
+	0x32c:	call        func_l
+	0x32d:	push        global_l
+	0x32e:	push        Infinity
+	0x32f:	neg         
+	0x330:	push        Infinity
+	0x331:	push        0
+	0x332:	neg         
+	0x333:	push        0
+	0x334:	call        func_l
+	0x335:	push        global_l
+	0x336:	push        0
+	0x337:	neg         
+	0x338:	push        0
+	0x339:	push        0
+	0x33a:	push        0
+	0x33b:	neg         
+	0x33c:	call        func_l
+	0x33d:	push        global_l
+	0x33e:	push        0
+	0x33f:	push        0
+	0x340:	neg         
+	0x341:	push        0
+	0x342:	push        Infinity
+	0x343:	neg         
+	0x344:	call        func_l
+	0x345:	push        global_l
+	0x346:	push        0
+	0x347:	push        0
+	0x348:	push        Infinity
+	0x349:	push        Infinity
+	0x34a:	neg         
+	0x34b:	call        func_l
+	0x34c:	push        global_l
+	0x34d:	push        0
+	0x34e:	push        0
+	0x34f:	neg         
+	0x350:	push        0
+	0x351:	push        0
+	0x352:	neg         
+	0x353:	call        func_l
+	0x354:	push        global_l
+	0x355:	push        Infinity
+	0x356:	neg         
+	0x357:	push        0
+	0x358:	neg         
+	0x359:	push        Infinity
+	0x35a:	neg         
+	0x35b:	push        Infinity
+	0x35c:	call        func_l
+	0x35d:	push        global_l
+	0x35e:	push        Infinity
+	0x35f:	push        0
+	0x360:	push        0
+	0x361:	push        0
+	0x362:	call        func_l
+	0x363:	push        global_l
+	0x364:	push        0
+	0x365:	neg         
+	0x366:	push        0
+	0x367:	neg         
+	0x368:	push        Infinity
+	0x369:	neg         
+	0x36a:	push        Infinity
+	0x36b:	neg         
+	0x36c:	call        func_l
+	0x36d:	push        global_l
+	0x36e:	push        0
+	0x36f:	neg         
+	0x370:	push        Infinity
+	0x371:	neg         
+	0x372:	push        0
+	0x373:	neg         
+	0x374:	push        0
+	0x375:	neg         
+	0x376:	call        func_l
+	0x377:	push        global_l
+	0x378:	push        Infinity
+	0x379:	neg         
+	0x37a:	push        0
+	0x37b:	push        Infinity
+	0x37c:	neg         
+	0x37d:	push        Infinity
+	0x37e:	neg         
+	0x37f:	call        func_l
+	0x380:	push        global_l
+	0x381:	push        Infinity
+	0x382:	push        0
+	0x383:	neg         
+	0x384:	push        0
+	0x385:	neg         
+	0x386:	push        0
+	0x387:	neg         
+	0x388:	call        func_l
+	0x389:	push        global_l
+	0x38a:	push        0
+	0x38b:	push        0
+	0x38c:	neg         
+	0x38d:	push        Infinity
+	0x38e:	push        Infinity
+	0x38f:	neg         
+	0x390:	call        func_l
+	0x391:	push        global_l
+	0x392:	push        0
+	0x393:	neg         
+	0x394:	push        Infinity
+	0x395:	push        Infinity
+	0x396:	neg         
+	0x397:	push        Infinity
+	0x398:	neg         
+	0x399:	call        func_l
+	0x39a:	push        global_l
+	0x39b:	push        Infinity
+	0x39c:	push        Infinity
+	0x39d:	neg         
+	0x39e:	push        Infinity
+	0x39f:	push        Infinity
+	0x3a0:	neg         
+	0x3a1:	call        func_l
+	0x3a2:	push        global_l
+	0x3a3:	push        0
+	0x3a4:	neg         
+	0x3a5:	push        0
+	0x3a6:	neg         
+	0x3a7:	push        Infinity
+	0x3a8:	neg         
+	0x3a9:	push        Infinity
+	0x3aa:	call        func_l
+	0x3ab:	push        global_l
+	0x3ac:	push        Infinity
+	0x3ad:	neg         
+	0x3ae:	push        0
+	0x3af:	push        0
+	0x3b0:	neg         
+	0x3b1:	push        Infinity
+	0x3b2:	neg         
+	0x3b3:	call        func_l
+	0x3b4:	push        global_l
+	0x3b5:	push        0
+	0x3b6:	push        0
+	0x3b7:	neg         
+	0x3b8:	push        Infinity
+	0x3b9:	neg         
+	0x3ba:	push        Infinity
+	0x3bb:	call        func_l
+	0x3bc:	push        global_l
+	0x3bd:	push        0
+	0x3be:	neg         
+	0x3bf:	push        0
+	0x3c0:	neg         
+	0x3c1:	push        0
+	0x3c2:	neg         
+	0x3c3:	push        Infinity
+	0x3c4:	neg         
+	0x3c5:	call        func_l
+	0x3c6:	push        global_l
+	0x3c7:	push        Infinity
+	0x3c8:	push        Infinity
+	0x3c9:	push        Infinity
+	0x3ca:	neg         
+	0x3cb:	push        Infinity
+	0x3cc:	neg         
+	0x3cd:	call        func_l
+	0x3ce:	push        global_l
+	0x3cf:	push        0
+	0x3d0:	push        0
+	0x3d1:	neg         
+	0x3d2:	push        Infinity
+	0x3d3:	neg         
+	0x3d4:	push        0
+	0x3d5:	neg         
+	0x3d6:	call        func_l
+	0x3d7:	push        global_l
+	0x3d8:	push        0
+	0x3d9:	neg         
+	0x3da:	push        0
+	0x3db:	push        0
+	0x3dc:	neg         
+	0x3dd:	push        0
+	0x3de:	neg         
+	0x3df:	call        func_l
+	0x3e0:	push        global_l
+	0x3e1:	push        0
+	0x3e2:	push        0
+	0x3e3:	neg         
+	0x3e4:	push        Infinity
+	0x3e5:	push        0
+	0x3e6:	neg         
+	0x3e7:	call        func_l
+	0x3e8:	push        global_l
+	0x3e9:	push        Infinity
+	0x3ea:	neg         
+	0x3eb:	push        0
+	0x3ec:	push        0
+	0x3ed:	push        0
+	0x3ee:	neg         
+	0x3ef:	call        func_l
+	0x3f0:	push        global_l
+	0x3f1:	push        Infinity
+	0x3f2:	push        Infinity
+	0x3f3:	neg         
+	0x3f4:	push        0
+	0x3f5:	neg         
+	0x3f6:	push        Infinity
+	0x3f7:	call        func_l
+	0x3f8:	push        global_l
+	0x3f9:	push        Infinity
+	0x3fa:	neg         
+	0x3fb:	push        Infinity
+	0x3fc:	push        0
+	0x3fd:	push        Infinity
+	0x3fe:	neg         
+	0x3ff:	call        func_l
+	0x400:	push        global_l
+	0x401:	push        0
+	0x402:	push        0
+	0x403:	neg         
+	0x404:	push        0
+	0x405:	neg         
+	0x406:	push        Infinity
+	0x407:	call        func_l
+	0x408:	push        global_l
+	0x409:	push        Infinity
+	0x40a:	neg         
+	0x40b:	push        0
+	0x40c:	neg         
+	0x40d:	push        0
+	0x40e:	neg         
+	0x40f:	push        Infinity
+	0x410:	neg         
+	0x411:	call        func_l
+	0x412:	push        global_l
+	0x413:	push        0
+	0x414:	neg         
+	0x415:	push        Infinity
+	0x416:	push        0
+	0x417:	push        Infinity
+	0x418:	call        func_l
+	0x419:	push        global_l
+	0x41a:	push        Infinity
+	0x41b:	push        0
+	0x41c:	push        0
+	0x41d:	neg         
+	0x41e:	push        0
+	0x41f:	neg         
+	0x420:	call        func_l
+	0x421:	push        global_l
+	0x422:	push        0
+	0x423:	neg         
+	0x424:	push        Infinity
+	0x425:	push        0
+	0x426:	neg         
+	0x427:	push        0
+	0x428:	call        func_l
+	0x429:	push        global_l
+	0x42a:	push        0
+	0x42b:	push        0
+	0x42c:	neg         
+	0x42d:	push        Infinity
+	0x42e:	push        0
+	0x42f:	call        func_l
+	0x430:	push        global_l
+	0x431:	push        Infinity
+	0x432:	neg         
+	0x433:	push        Infinity
+	0x434:	push        0
+	0x435:	push        0
+	0x436:	neg         
+	0x437:	call        func_l
+	0x438:	push        global_l
+	0x439:	push        Infinity
+	0x43a:	push        0
+	0x43b:	push        Infinity
+	0x43c:	push        Infinity
+	0x43d:	neg         
+	0x43e:	call        func_l
+	0x43f:	push        global_l
+	0x440:	push        Infinity
+	0x441:	neg         
+	0x442:	push        0
+	0x443:	push        Infinity
+	0x444:	push        0
+	0x445:	neg         
+	0x446:	call        func_l
+	0x447:	push        global_l
+	0x448:	push        Infinity
+	0x449:	push        Infinity
+	0x44a:	neg         
+	0x44b:	push        Infinity
+	0x44c:	neg         
+	0x44d:	push        0
+	0x44e:	neg         
+	0x44f:	call        func_l
+	0x450:	push        global_l
+	0x451:	push        0
+	0x452:	neg         
+	0x453:	push        0
+	0x454:	push        0
+	0x455:	neg         
+	0x456:	push        0
+	0x457:	call        func_l
+	0x458:	push        global_l
+	0x459:	push        0
+	0x45a:	push        Infinity
+	0x45b:	push        0
+	0x45c:	neg         
+	0x45d:	push        0
+	0x45e:	call        func_l
+	0x45f:	push        global_l
+	0x460:	push        0
+	0x461:	push        Infinity
+	0x462:	push        Infinity
+	0x463:	neg         
+	0x464:	push        Infinity
+	0x465:	call        func_l
+	0x466:	push        global_l
+	0x467:	push        Infinity
+	0x468:	neg         
+	0x469:	push        Infinity
+	0x46a:	neg         
+	0x46b:	push        0
+	0x46c:	push        Infinity
+	0x46d:	neg         
+	0x46e:	call        func_l
+	0x46f:	push        global_l
+	0x470:	push        0
+	0x471:	push        0
+	0x472:	push        0
+	0x473:	push        0
+	0x474:	neg         
+	0x475:	call        func_l
+	0x476:	push        global_l
+	0x477:	push        0
+	0x478:	push        Infinity
+	0x479:	push        0
+	0x47a:	push        Infinity
+	0x47b:	neg         
+	0x47c:	call        func_l
+	0x47d:	push        global_l
+	0x47e:	push        0
+	0x47f:	neg         
+	0x480:	push        0
+	0x481:	push        Infinity
+	0x482:	push        0
+	0x483:	neg         
+	0x484:	call        func_l
+	0x485:	push        global_l
+	0x486:	push        0
+	0x487:	push        Infinity
+	0x488:	neg         
+	0x489:	push        0
+	0x48a:	push        Infinity
+	0x48b:	neg         
+	0x48c:	call        func_l
+	0x48d:	push        global_l
+	0x48e:	push        Infinity
+	0x48f:	neg         
+	0x490:	push        Infinity
+	0x491:	neg         
+	0x492:	push        Infinity
+	0x493:	neg         
+	0x494:	push        0
+	0x495:	call        func_l
+	0x496:	push        global_l
+	0x497:	push        Infinity
+	0x498:	push        0
+	0x499:	push        Infinity
+	0x49a:	neg         
+	0x49b:	push        0
+	0x49c:	call        func_l
+	0x49d:	push        global_l
+	0x49e:	push        0
+	0x49f:	neg         
+	0x4a0:	push        Infinity
+	0x4a1:	push        Infinity
+	0x4a2:	push        0
+	0x4a3:	neg         
+	0x4a4:	call        func_l
+	0x4a5:	push        global_l
+	0x4a6:	push        0
+	0x4a7:	neg         
+	0x4a8:	push        Infinity
+	0x4a9:	push        Infinity
+	0x4aa:	neg         
+	0x4ab:	push        0
+	0x4ac:	call        func_l
+	0x4ad:	push        global_l
+	0x4ae:	push        Infinity
+	0x4af:	push        0
+	0x4b0:	push        Infinity
+	0x4b1:	push        0
+	0x4b2:	call        func_l
+	0x4b3:	push        global_l
+	0x4b4:	push        0
+	0x4b5:	push        Infinity
+	0x4b6:	push        0
+	0x4b7:	neg         
+	0x4b8:	push        0
+	0x4b9:	neg         
+	0x4ba:	call        func_l
+	0x4bb:	push        global_l
+	0x4bc:	push        0
+	0x4bd:	neg         
+	0x4be:	push        0
+	0x4bf:	push        Infinity
+	0x4c0:	neg         
+	0x4c1:	push        0
+	0x4c2:	call        func_l
+	0x4c3:	push        global_l
+	0x4c4:	push        Infinity
+	0x4c5:	neg         
+	0x4c6:	push        Infinity
+	0x4c7:	neg         
+	0x4c8:	push        Infinity
+	0x4c9:	push        Infinity
+	0x4ca:	neg         
+	0x4cb:	call        func_l
+	0x4cc:	push        global_l
+	0x4cd:	push        0
+	0x4ce:	neg         
+	0x4cf:	push        0
+	0x4d0:	neg         
+	0x4d1:	push        0
+	0x4d2:	push        Infinity
+	0x4d3:	neg         
+	0x4d4:	call        func_l
+	0x4d5:	push        global_l
+	0x4d6:	push        0
+	0x4d7:	neg         
+	0x4d8:	push        Infinity
+	0x4d9:	push        Infinity
+	0x4da:	neg         
+	0x4db:	push        Infinity
+	0x4dc:	call        func_l
+	0x4dd:	push        global_l
+	0x4de:	push        0
+	0x4df:	neg         
+	0x4e0:	push        0
+	0x4e1:	push        Infinity
+	0x4e2:	push        Infinity
+	0x4e3:	call        func_l
+	0x4e4:	push        global_l
+	0x4e5:	push        Infinity
+	0x4e6:	push        Infinity
+	0x4e7:	push        0
+	0x4e8:	neg         
+	0x4e9:	push        Infinity
+	0x4ea:	call        func_l
+	0x4eb:	push        global_l
+	0x4ec:	push        0
+	0x4ed:	push        0
+	0x4ee:	push        0
+	0x4ef:	neg         
+	0x4f0:	push        0
+	0x4f1:	neg         
+	0x4f2:	call        func_l
+	0x4f3:	push        global_l
+	0x4f4:	push        0
+	0x4f5:	push        Infinity
+	0x4f6:	neg         
+	0x4f7:	push        Infinity
+	0x4f8:	neg         
+	0x4f9:	push        0
+	0x4fa:	neg         
+	0x4fb:	call        func_l
+	0x4fc:	push        global_l
+	0x4fd:	push        0
+	0x4fe:	neg         
+	0x4ff:	push        0
+	0x500:	neg         
+	0x501:	push        Infinity
+	0x502:	neg         
+	0x503:	push        0
+	0x504:	call        func_l
+	0x505:	push        global_l
+	0x506:	push        Infinity
+	0x507:	neg         
+	0x508:	push        0
+	0x509:	push        Infinity
+	0x50a:	neg         
+	0x50b:	push        0
+	0x50c:	neg         
+	0x50d:	call        func_l
+	0x50e:	push        global_l
+	0x50f:	push        0
+	0x510:	push        Infinity
+	0x511:	neg         
+	0x512:	push        0
+	0x513:	neg         
+	0x514:	push        0
+	0x515:	neg         
+	0x516:	call        func_l
+	0x517:	push        global_l
+	0x518:	push        Infinity
+	0x519:	neg         
+	0x51a:	push        Infinity
+	0x51b:	push        0
+	0x51c:	push        0
+	0x51d:	call        func_l
+	0x51e:	push        global_l
+	0x51f:	push        Infinity
+	0x520:	neg         
+	0x521:	push        0
+	0x522:	neg         
+	0x523:	push        0
+	0x524:	push        0
+	0x525:	neg         
+	0x526:	call        func_l
+	0x527:	push        global_l
+	0x528:	push        0
+	0x529:	neg         
+	0x52a:	push        Infinity
+	0x52b:	neg         
+	0x52c:	push        0
+	0x52d:	neg         
+	0x52e:	push        0
+	0x52f:	call        func_l
+	0x530:	push        global_l
+	0x531:	push        0
+	0x532:	neg         
+	0x533:	push        Infinity
+	0x534:	push        Infinity
+	0x535:	neg         
+	0x536:	push        0
+	0x537:	neg         
+	0x538:	call        func_l
+	0x539:	push        global_l
+	0x53a:	push        Infinity
+	0x53b:	push        0
+	0x53c:	push        Infinity
+	0x53d:	push        0
+	0x53e:	neg         
+	0x53f:	call        func_l
+	0x540:	push        global_l
+	0x541:	push        0
+	0x542:	push        0
+	0x543:	push        0
+	0x544:	push        0
+	0x545:	call        func_l
+	0x546:	push        global_l
+	0x547:	push        0
+	0x548:	push        Infinity
+	0x549:	neg         
+	0x54a:	push        0
+	0x54b:	neg         
+	0x54c:	push        Infinity
+	0x54d:	neg         
+	0x54e:	call        func_l
+	0x54f:	push        global_l
+	0x550:	push        Infinity
+	0x551:	push        0
+	0x552:	push        Infinity
+	0x553:	neg         
+	0x554:	push        0
+	0x555:	neg         
+	0x556:	call        func_l
+	0x557:	push        global_l
+	0x558:	push        Infinity
+	0x559:	neg         
+	0x55a:	push        Infinity
+	0x55b:	neg         
+	0x55c:	push        0
+	0x55d:	neg         
+	0x55e:	push        0
+	0x55f:	neg         
+	0x560:	call        func_l
+	0x561:	push        global_l
+	0x562:	push        Infinity
+	0x563:	neg         
+	0x564:	push        Infinity
+	0x565:	push        Infinity
+	0x566:	push        Infinity
+	0x567:	call        func_l
+	0x568:	push        global_l
+	0x569:	push        0
+	0x56a:	push        0
+	0x56b:	neg         
+	0x56c:	push        Infinity
+	0x56d:	neg         
+	0x56e:	push        0
+	0x56f:	call        func_l
+	0x570:	push        global_l
+	0x571:	push        0
+	0x572:	push        0
+	0x573:	push        0
+	0x574:	neg         
+	0x575:	push        Infinity
+	0x576:	neg         
+	0x577:	call        func_l
+	0x578:	push        global_l
+	0x579:	push        0
+	0x57a:	neg         
+	0x57b:	push        Infinity
+	0x57c:	neg         
+	0x57d:	push        Infinity
+	0x57e:	push        Infinity
+	0x57f:	call        func_l
+	0x580:	push        global_l
+	0x581:	push        0
+	0x582:	neg         
+	0x583:	push        0
+	0x584:	push        0
+	0x585:	neg         
+	0x586:	push        Infinity
+	0x587:	neg         
+	0x588:	call        func_l
+	0x589:	push        global_l
+	0x58a:	push        Infinity
+	0x58b:	neg         
+	0x58c:	push        0
+	0x58d:	neg         
+	0x58e:	push        0
+	0x58f:	push        0
+	0x590:	call        func_l
+	0x591:	push        global_l
+	0x592:	push        0
+	0x593:	neg         
+	0x594:	push        0
+	0x595:	push        Infinity
+	0x596:	push        Infinity
+	0x597:	neg         
+	0x598:	call        func_l
+	0x599:	push        global_l
+	0x59a:	push        Infinity
+	0x59b:	push        Infinity
+	0x59c:	neg         
+	0x59d:	push        0
+	0x59e:	push        Infinity
+	0x59f:	neg         
+	0x5a0:	call        func_l
+	0x5a1:	push        global_l
+	0x5a2:	push        0
+	0x5a3:	push        Infinity
+	0x5a4:	neg         
+	0x5a5:	push        Infinity
+	0x5a6:	neg         
+	0x5a7:	push        Infinity
+	0x5a8:	call        func_l
+	0x5a9:	push        global_l
+	0x5aa:	push        Infinity
+	0x5ab:	push        Infinity
+	0x5ac:	neg         
+	0x5ad:	push        0
+	0x5ae:	push        Infinity
+	0x5af:	call        func_l
+	0x5b0:	push        global_l
+	0x5b1:	push        0
+	0x5b2:	push        0
+	0x5b3:	push        Infinity
+	0x5b4:	neg         
+	0x5b5:	push        Infinity
+	0x5b6:	call        func_l
+	0x5b7:	push        global_l
+	0x5b8:	push        0
+	0x5b9:	push        0
+	0x5ba:	neg         
+	0x5bb:	push        Infinity
+	0x5bc:	push        Infinity
+	0x5bd:	call        func_l
+	0x5be:	push        global_l
+	0x5bf:	push        Infinity
+	0x5c0:	push        0
+	0x5c1:	neg         
+	0x5c2:	push        Infinity
+	0x5c3:	neg         
+	0x5c4:	push        Infinity
+	0x5c5:	neg         
+	0x5c6:	call        func_l
+	0x5c7:	push        global_l
+	0x5c8:	push        Infinity
+	0x5c9:	push        0
+	0x5ca:	neg         
+	0x5cb:	push        Infinity
+	0x5cc:	neg         
+	0x5cd:	push        0
+	0x5ce:	call        func_l
+	0x5cf:	push        global_l
+	0x5d0:	push        0
+	0x5d1:	push        Infinity
+	0x5d2:	neg         
+	0x5d3:	push        Infinity
+	0x5d4:	neg         
+	0x5d5:	push        0
+	0x5d6:	call        func_l
+	0x5d7:	push        global_l
+	0x5d8:	push        Infinity
+	0x5d9:	push        0
+	0x5da:	neg         
+	0x5db:	push        0
+	0x5dc:	neg         
+	0x5dd:	push        Infinity
+	0x5de:	call        func_l
+	0x5df:	push        global_l
+	0x5e0:	push        Infinity
+	0x5e1:	push        0
+	0x5e2:	push        Infinity
+	0x5e3:	neg         
+	0x5e4:	push        Infinity
+	0x5e5:	call        func_l
+	0x5e6:	push        global_l
+	0x5e7:	push        Infinity
+	0x5e8:	push        Infinity
+	0x5e9:	neg         
+	0x5ea:	push        Infinity
+	0x5eb:	push        Infinity
+	0x5ec:	call        func_l
+	0x5ed:	push        global_l
+	0x5ee:	push        0
+	0x5ef:	neg         
+	0x5f0:	push        0
+	0x5f1:	push        Infinity
+	0x5f2:	neg         
+	0x5f3:	push        Infinity
+	0x5f4:	neg         
+	0x5f5:	call        func_l
+	0x5f6:	push        global_l
+	0x5f7:	push        0
+	0x5f8:	neg         
+	0x5f9:	push        Infinity
+	0x5fa:	push        0
+	0x5fb:	neg         
+	0x5fc:	push        0
+	0x5fd:	neg         
+	0x5fe:	call        func_l
+	0x5ff:	push        global_l
+	0x600:	push        Infinity
+	0x601:	neg         
+	0x602:	push        0
+	0x603:	push        Infinity
+	0x604:	push        Infinity
+	0x605:	call        func_l
+	0x606:	push        global_l
+	0x607:	push        Infinity
+	0x608:	push        0
+	0x609:	neg         
+	0x60a:	push        0
+	0x60b:	neg         
+	0x60c:	push        Infinity
+	0x60d:	neg         
+	0x60e:	call        func_l
+	0x60f:	push        global_l
+	0x610:	push        0
+	0x611:	push        Infinity
+	0x612:	neg         
+	0x613:	push        Infinity
+	0x614:	push        Infinity
+	0x615:	call        func_l
+	0x616:	push        global_l
+	0x617:	push        0
+	0x618:	neg         
+	0x619:	push        0
+	0x61a:	push        0
+	0x61b:	push        Infinity
+	0x61c:	neg         
+	0x61d:	call        func_l
+	0x61e:	push        global_l
+	0x61f:	push        Infinity
+	0x620:	neg         
+	0x621:	push        0
+	0x622:	neg         
+	0x623:	push        Infinity
+	0x624:	neg         
+	0x625:	push        0
+	0x626:	neg         
+	0x627:	call        func_l
+	0x628:	push        global_l
+	0x629:	push        Infinity
+	0x62a:	neg         
+	0x62b:	push        Infinity
+	0x62c:	push        Infinity
+	0x62d:	push        0
+	0x62e:	call        func_l
+	0x62f:	push        global_l
+	0x630:	push        0
+	0x631:	push        0
+	0x632:	push        0
+	0x633:	push        Infinity
+	0x634:	call        func_l
+	0x635:	push        global_l
+	0x636:	push        Infinity
+	0x637:	push        Infinity
+	0x638:	push        Infinity
+	0x639:	push        Infinity
+	0x63a:	neg         
+	0x63b:	call        func_l
+	0x63c:	push        global_l
+	0x63d:	push        Infinity
+	0x63e:	push        0
+	0x63f:	neg         
+	0x640:	push        0
+	0x641:	push        Infinity
+	0x642:	call        func_l
+	0x643:	push        global_l
+	0x644:	push        0
+	0x645:	push        0
+	0x646:	neg         
+	0x647:	push        0
+	0x648:	neg         
+	0x649:	push        0
+	0x64a:	neg         
+	0x64b:	call        func_l
+	0x64c:	push        global_l
+	0x64d:	push        0
+	0x64e:	neg         
+	0x64f:	push        0
+	0x650:	push        0
+	0x651:	neg         
+	0x652:	push        Infinity
+	0x653:	call        func_l
+	0x654:	push        global_l
+	0x655:	push        Infinity
+	0x656:	neg         
+	0x657:	push        0
+	0x658:	push        0
+	0x659:	neg         
+	0x65a:	push        0
+	0x65b:	neg         
+	0x65c:	call        func_l
+	0x65d:	push        global_l
+	0x65e:	push        0
+	0x65f:	neg         
+	0x660:	push        Infinity
+	0x661:	neg         
+	0x662:	push        0
+	0x663:	neg         
+	0x664:	push        Infinity
+	0x665:	neg         
+	0x666:	call        func_l
+	0x667:	push        global_l
+	0x668:	push        0
+	0x669:	push        Infinity
+	0x66a:	push        0
+	0x66b:	push        0
+	0x66c:	call        func_l
+	0x66d:	push        global_l
+	0x66e:	push        Infinity
+	0x66f:	neg         
+	0x670:	push        0
+	0x671:	push        Infinity
+	0x672:	neg         
+	0x673:	push        0
+	0x674:	call        func_l
+	0x675:	push        global_l
+	0x676:	push        0
+	0x677:	neg         
+	0x678:	push        Infinity
+	0x679:	push        0
+	0x67a:	push        0
+	0x67b:	call        func_l
+	0x67c:	push        global_l
+	0x67d:	push        0
+	0x67e:	neg         
+	0x67f:	push        Infinity
+	0x680:	neg         
+	0x681:	push        Infinity
+	0x682:	push        0
+	0x683:	neg         
+	0x684:	call        func_l
+	0x685:	push        global_l
+	0x686:	push        Infinity
+	0x687:	neg         
+	0x688:	push        0
+	0x689:	push        0
+	0x68a:	neg         
+	0x68b:	push        Infinity
+	0x68c:	call        func_l
+	0x68d:	push        global_l
+	0x68e:	push        Infinity
+	0x68f:	push        Infinity
+	0x690:	push        0
+	0x691:	push        Infinity
+	0x692:	call        func_l
+	0x693:	push        global_l
+	0x694:	push        Infinity
+	0x695:	push        0
+	0x696:	push        Infinity
+	0x697:	neg         
+	0x698:	push        Infinity
+	0x699:	neg         
+	0x69a:	call        func_l
+	0x69b:	push        global_l
+	0x69c:	push        Infinity
+	0x69d:	push        Infinity
+	0x69e:	neg         
+	0x69f:	push        0
+	0x6a0:	push        0
+	0x6a1:	call        func_l
+	0x6a2:	push        global_l
+	0x6a3:	push        Infinity
+	0x6a4:	neg         
+	0x6a5:	push        Infinity
+	0x6a6:	neg         
+	0x6a7:	push        0
+	0x6a8:	push        0
+	0x6a9:	call        func_l
+	0x6aa:	push        global_l
+	0x6ab:	push        Infinity
+	0x6ac:	push        Infinity
+	0x6ad:	push        0
+	0x6ae:	push        Infinity
+	0x6af:	neg         
+	0x6b0:	call        func_l
+	0x6b1:	push        global_l
+	0x6b2:	push        0
+	0x6b3:	neg         
+	0x6b4:	push        Infinity
+	0x6b5:	push        Infinity
+	0x6b6:	push        Infinity
+	0x6b7:	neg         
+	0x6b8:	call        func_l
+	0x6b9:	push        global_l
+	0x6ba:	push        0
+	0x6bb:	push        Infinity
+	0x6bc:	push        Infinity
+	0x6bd:	neg         
+	0x6be:	push        Infinity
+	0x6bf:	neg         
+	0x6c0:	call        func_l
+	0x6c1:	push        global_l
+	0x6c2:	push        0
+	0x6c3:	neg         
+	0x6c4:	push        Infinity
+	0x6c5:	neg         
+	0x6c6:	push        Infinity
+	0x6c7:	push        Infinity
+	0x6c8:	neg         
+	0x6c9:	call        func_l
+	0x6ca:	push        global_l
+	0x6cb:	push        0
+	0x6cc:	push        Infinity
+	0x6cd:	push        Infinity
+	0x6ce:	neg         
+	0x6cf:	push        0
+	0x6d0:	call        func_l
+	0x6d1:	push        global_l
+	0x6d2:	push        0
+	0x6d3:	neg         
+	0x6d4:	push        Infinity
+	0x6d5:	neg         
+	0x6d6:	push        0
+	0x6d7:	neg         
+	0x6d8:	push        Infinity
+	0x6d9:	call        func_l
+	0x6da:	push        global_l
+	0x6db:	push        0
+	0x6dc:	neg         
+	0x6dd:	push        0
+	0x6de:	push        Infinity
+	0x6df:	neg         
+	0x6e0:	push        0
+	0x6e1:	neg         
+	0x6e2:	call        func_l
+	0x6e3:	push        global_l
+	0x6e4:	push        0
+	0x6e5:	neg         
+	0x6e6:	push        0
+	0x6e7:	neg         
+	0x6e8:	push        0
+	0x6e9:	push        0
+	0x6ea:	neg         
+	0x6eb:	call        func_l
+	0x6ec:	push        global_l
+	0x6ed:	push        Infinity
+	0x6ee:	push        Infinity
+	0x6ef:	push        Infinity
+	0x6f0:	push        0
+	0x6f1:	neg         
+	0x6f2:	call        func_l
+	0x6f3:	push        global_l
+	0x6f4:	push        Infinity
+	0x6f5:	neg         
+	0x6f6:	push        0
+	0x6f7:	neg         
+	0x6f8:	push        Infinity
+	0x6f9:	neg         
+	0x6fa:	push        0
+	0x6fb:	call        func_l
+	0x6fc:	push        global_l
+	0x6fd:	push        Infinity
+	0x6fe:	push        Infinity
+	0x6ff:	push        Infinity
+	0x700:	push        0
+	0x701:	call        func_l
+	0x702:	push        global_l
+	0x703:	push        0
+	0x704:	push        0
+	0x705:	neg         
+	0x706:	push        0
+	0x707:	push        0
+	0x708:	call        func_l
+	0x709:	push        global_l
+	0x70a:	push        0
+	0x70b:	neg         
+	0x70c:	push        Infinity
+	0x70d:	neg         
+	0x70e:	push        0
+	0x70f:	push        0
+	0x710:	neg         
+	0x711:	call        func_l
+	0x712:	push        global_l
+	0x713:	push        Infinity
+	0x714:	neg         
+	0x715:	push        Infinity
+	0x716:	push        Infinity
+	0x717:	push        Infinity
+	0x718:	neg         
+	0x719:	call        func_l
+	0x71a:	push        global_l
+	0x71b:	push        0
+	0x71c:	push        Infinity
+	0x71d:	neg         
+	0x71e:	push        0
+	0x71f:	push        0
+	0x720:	call        func_l
+	0x721:	push        global_l
+	0x722:	push        Infinity
+	0x723:	neg         
+	0x724:	push        Infinity
+	0x725:	neg         
+	0x726:	push        Infinity
+	0x727:	push        0
+	0x728:	neg         
+	0x729:	call        func_l
+	0x72a:	push        global_l
+	0x72b:	push        Infinity
+	0x72c:	push        0
+	0x72d:	neg         
+	0x72e:	push        0
+	0x72f:	push        0
+	0x730:	call        func_l
+	0x731:	push        global_l
+	0x732:	push        Infinity
+	0x733:	push        Infinity
+	0x734:	neg         
+	0x735:	push        0
+	0x736:	push        0
+	0x737:	neg         
+	0x738:	call        func_l
+	0x739:	push        global_l
+	0x73a:	push        0
+	0x73b:	push        Infinity
+	0x73c:	push        Infinity
+	0x73d:	push        Infinity
+	0x73e:	neg         
+	0x73f:	call        func_l
+	0x740:	push        global_l
+	0x741:	push        Infinity
+	0x742:	neg         
+	0x743:	push        0
+	0x744:	push        Infinity
+	0x745:	push        0
+	0x746:	call        func_l
+	0x747:	push        global_l
+	0x748:	push        Infinity
+	0x749:	neg         
+	0x74a:	push        Infinity
+	0x74b:	push        0
+	0x74c:	neg         
+	0x74d:	push        Infinity
+	0x74e:	call        func_l
+	0x74f:	push        global_l
+	0x750:	push        0
+	0x751:	neg         
+	0x752:	push        0
+	0x753:	push        0
+	0x754:	push        0
+	0x755:	call        func_l
+	0x756:	push        global_l
+	0x757:	push        Infinity
+	0x758:	push        0
+	0x759:	neg         
+	0x75a:	push        Infinity
+	0x75b:	push        0
+	0x75c:	call        func_l
+	0x75d:	push        global_l
+	0x75e:	push        0
+	0x75f:	neg         
+	0x760:	push        0
+	0x761:	neg         
+	0x762:	push        Infinity
+	0x763:	push        Infinity
+	0x764:	call        func_l
+	0x765:	push        global_l
+	0x766:	push        0
+	0x767:	push        0
+	0x768:	push        0
+	0x769:	neg         
+	0x76a:	push        0
+	0x76b:	call        func_l
+	0x76c:	push        global_l
+	0x76d:	push        Infinity
+	0x76e:	push        Infinity
+	0x76f:	neg         
+	0x770:	push        Infinity
+	0x771:	neg         
+	0x772:	push        0
+	0x773:	call        func_l
+	0x774:	push        global_l
+	0x775:	push        0
+	0x776:	push        Infinity
+	0x777:	push        Infinity
+	0x778:	push        Infinity
+	0x779:	call        func_l
+	0x77a:	push        global_l
+	0x77b:	push        0
+	0x77c:	neg         
+	0x77d:	push        0
+	0x77e:	push        Infinity
+	0x77f:	push        0
+	0x780:	call        func_l
+	0x781:	push        global_l
+	0x782:	push        Infinity
+	0x783:	push        0
+	0x784:	neg         
+	0x785:	push        0
+	0x786:	push        0
+	0x787:	neg         
+	0x788:	call        func_l
+	0x789:	push        global_l
+	0x78a:	push        Infinity
+	0x78b:	push        Infinity
+	0x78c:	neg         
+	0x78d:	push        0
+	0x78e:	neg         
+	0x78f:	push        Infinity
+	0x790:	neg         
+	0x791:	call        func_l
+	0x792:	push        global_l
+	0x793:	push        Infinity
+	0x794:	neg         
+	0x795:	push        0
+	0x796:	push        0
+	0x797:	push        0
+	0x798:	call        func_l
+	0x799:	push        global_l
+	0x79a:	push        0
+	0x79b:	push        Infinity
+	0x79c:	push        0
+	0x79d:	push        0
+	0x79e:	neg         
+	0x79f:	call        func_l
+	0x7a0:	push        global_l
+	0x7a1:	push        Infinity
+	0x7a2:	neg         
+	0x7a3:	push        0
+	0x7a4:	push        0
+	0x7a5:	push        Infinity
+	0x7a6:	call        func_l
+	0x7a7:	push        global_l
+	0x7a8:	push        Infinity
+	0x7a9:	push        0
+	0x7aa:	push        0
+	0x7ab:	push        0
+	0x7ac:	neg         
+	0x7ad:	call        func_l
+	0x7ae:	push        global_l
+	0x7af:	push        Infinity
+	0x7b0:	push        0
+	0x7b1:	neg         
+	0x7b2:	push        Infinity
+	0x7b3:	push        Infinity
+	0x7b4:	neg         
+	0x7b5:	call        func_l
+	0x7b6:	push        global_l
+	0x7b7:	push        Infinity
+	0x7b8:	neg         
+	0x7b9:	push        Infinity
+	0x7ba:	neg         
+	0x7bb:	push        0
+	0x7bc:	push        0
+	0x7bd:	neg         
+	0x7be:	call        func_l
+	0x7bf:	push        global_l
+	0x7c0:	push        0
+	0x7c1:	neg         
+	0x7c2:	push        Infinity
+	0x7c3:	neg         
+	0x7c4:	push        Infinity
+	0x7c5:	push        0
+	0x7c6:	call        func_l
+	0x7c7:	push        global_l
+	0x7c8:	push        0
+	0x7c9:	push        Infinity
+	0x7ca:	neg         
+	0x7cb:	push        Infinity
+	0x7cc:	push        0
+	0x7cd:	call        func_l
+	0x7ce:	push        global_l
+	0x7cf:	push        0
+	0x7d0:	neg         
+	0x7d1:	push        0
+	0x7d2:	neg         
+	0x7d3:	push        0
+	0x7d4:	push        Infinity
+	0x7d5:	call        func_l
+	0x7d6:	push        global_l
+	0x7d7:	push        0
+	0x7d8:	push        Infinity
+	0x7d9:	push        0
+	0x7da:	neg         
+	0x7db:	push        Infinity
+	0x7dc:	neg         
+	0x7dd:	call        func_l
+	0x7de:	push        global_l
+	0x7df:	push        Infinity
+	0x7e0:	neg         
+	0x7e1:	push        Infinity
+	0x7e2:	neg         
+	0x7e3:	push        Infinity
+	0x7e4:	push        0
+	0x7e5:	call        func_l
+	0x7e6:	push        global_l
+	0x7e7:	push        Infinity
+	0x7e8:	push        Infinity
+	0x7e9:	push        0
+	0x7ea:	push        0
+	0x7eb:	neg         
+	0x7ec:	call        func_l
+	0x7ed:	push        global_l
+	0x7ee:	push        Infinity
+	0x7ef:	neg         
+	0x7f0:	push        Infinity
+	0x7f1:	push        Infinity
+	0x7f2:	neg         
+	0x7f3:	push        Infinity
+	0x7f4:	neg         
+	0x7f5:	call        func_l
+	0x7f6:	push        global_l
+	0x7f7:	push        0
+	0x7f8:	push        Infinity
+	0x7f9:	neg         
+	0x7fa:	push        Infinity
+	0x7fb:	neg         
+	0x7fc:	push        Infinity
+	0x7fd:	neg         
+	0x7fe:	call        func_l
+	0x7ff:	push        global_l
+	0x800:	push        0
+	0x801:	neg         
+	0x802:	push        0
+	0x803:	neg         
+	0x804:	push        0
+	0x805:	push        0
+	0x806:	call        func_l
+	0x807:	push        global_l
+	0x808:	push        Infinity
+	0x809:	neg         
+	0x80a:	push        0
+	0x80b:	neg         
+	0x80c:	push        0
+	0x80d:	neg         
+	0x80e:	push        Infinity
+	0x80f:	call        func_l
+	0x810:	push        global_l
+	0x811:	push        0
+	0x812:	neg         
+	0x813:	push        0
+	0x814:	push        0
+	0x815:	push        Infinity
+	0x816:	call        func_l
+	0x817:	push        global_l
+	0x818:	push        0
+	0x819:	neg         
+	0x81a:	push        Infinity
+	0x81b:	neg         
+	0x81c:	push        0
+	0x81d:	push        Infinity
+	0x81e:	call        func_l
+	0x81f:	push        global_l
+	0x820:	push        0
+	0x821:	push        0
+	0x822:	neg         
+	0x823:	push        0
+	0x824:	neg         
+	0x825:	push        Infinity
+	0x826:	neg         
+	0x827:	call        func_l
+	0x828:	push        global_l
+	0x829:	push        Infinity
+	0x82a:	push        Infinity
+	0x82b:	neg         
+	0x82c:	push        Infinity
+	0x82d:	push        0
+	0x82e:	neg         
+	0x82f:	call        func_l
+	0x830:	push        global_l
+	0x831:	push        Infinity
+	0x832:	neg         
+	0x833:	push        0
+	0x834:	push        Infinity
+	0x835:	push        Infinity
+	0x836:	neg         
+	0x837:	call        func_l
+	0x838:	push        global_l
+	0x839:	push        Infinity
+	0x83a:	push        0
+	0x83b:	neg         
+	0x83c:	push        0
+	0x83d:	push        Infinity
+	0x83e:	neg         
+	0x83f:	call        func_l
+	0x840:	push        global_l
+	0x841:	push        Infinity
+	0x842:	neg         
+	0x843:	push        Infinity
+	0x844:	neg         
+	0x845:	push        Infinity
+	0x846:	neg         
+	0x847:	push        0
+	0x848:	neg         
+	0x849:	call        func_l
+	0x84a:	push        global_l
+	0x84b:	push        0
+	0x84c:	push        0
+	0x84d:	neg         
+	0x84e:	push        0
+	0x84f:	push        Infinity
+	0x850:	call        func_l
+	0x851:	push        global_l
+	0x852:	push        0
+	0x853:	push        0
+	0x854:	neg         
+	0x855:	push        0
+	0x856:	neg         
+	0x857:	push        0
+	0x858:	call        func_l
+	0x859:	push        global_l
+	0x85a:	push        Infinity
+	0x85b:	neg         
+	0x85c:	push        0
+	0x85d:	neg         
+	0x85e:	push        0
+	0x85f:	push        Infinity
+	0x860:	neg         
+	0x861:	call        func_l
+	0x862:	push        global_l
+	0x863:	push        Infinity
+	0x864:	push        Infinity
+	0x865:	neg         
+	0x866:	push        Infinity
+	0x867:	push        0
+	0x868:	call        func_l
+	0x869:	push        global_l
+	0x86a:	push        Infinity
+	0x86b:	neg         
+	0x86c:	push        0
+	0x86d:	neg         
+	0x86e:	push        Infinity
+	0x86f:	push        Infinity
+	0x870:	neg         
+	0x871:	call        func_l
+	0x872:	push        global_l
+	0x873:	push        Infinity
+	0x874:	neg         
+	0x875:	push        Infinity
+	0x876:	push        Infinity
+	0x877:	push        0
+	0x878:	neg         
+	0x879:	call        func_l
+	0x87a:	push        global_l
+	0x87b:	push        0
+	0x87c:	neg         
+	0x87d:	push        Infinity
+	0x87e:	neg         
+	0x87f:	push        Infinity
+	0x880:	neg         
+	0x881:	push        0
+	0x882:	call        func_l
+	0x883:	push        global_l
+	0x884:	push        0
+	0x885:	neg         
+	0x886:	push        Infinity
+	0x887:	neg         
+	0x888:	push        Infinity
+	0x889:	neg         
+	0x88a:	push        Infinity
+	0x88b:	neg         
+	0x88c:	call        func_l
+	0x88d:	push        global_l
+	0x88e:	push        0
+	0x88f:	neg         
+	0x890:	push        Infinity
+	0x891:	push        0
+	0x892:	neg         
+	0x893:	push        Infinity
+	0x894:	call        func_l
+	0x895:	push        global_l
+	0x896:	push        Infinity
+	0x897:	push        Infinity
+	0x898:	neg         
+	0x899:	push        Infinity
+	0x89a:	neg         
+	0x89b:	push        Infinity
+	0x89c:	call        func_l
+	0x89d:	push        global_l
+	0x89e:	push        0
+	0x89f:	push        0
+	0x8a0:	push        Infinity
+	0x8a1:	push        0
+	0x8a2:	call        func_l
+	0x8a3:	push        global_l
+	0x8a4:	push        0
+	0x8a5:	push        0
+	0x8a6:	push        0
+	0x8a7:	neg         
+	0x8a8:	push        Infinity
+	0x8a9:	call        func_l
+	0x8aa:	push        global_l
+	0x8ab:	push        Infinity
+	0x8ac:	push        0
+	0x8ad:	push        0
+	0x8ae:	push        Infinity
+	0x8af:	neg         
+	0x8b0:	call        func_l
+	0x8b1:	push        global_l
+	0x8b2:	push        0
+	0x8b3:	neg         
+	0x8b4:	push        0
+	0x8b5:	neg         
+	0x8b6:	push        Infinity
+	0x8b7:	push        0
+	0x8b8:	neg         
+	0x8b9:	call        func_l
+	0x8ba:	push        global_l
+	0x8bb:	push        Infinity
+	0x8bc:	neg         
+	0x8bd:	push        Infinity
+	0x8be:	push        0
+	0x8bf:	neg         
+	0x8c0:	push        0
+	0x8c1:	neg         
+	0x8c2:	call        func_l
+	0x8c3:	push        global_l
+	0x8c4:	push        Infinity
+	0x8c5:	push        0
+	0x8c6:	neg         
+	0x8c7:	push        Infinity
+	0x8c8:	push        0
+	0x8c9:	neg         
+	0x8ca:	call        func_l
+	0x8cb:	push        global_l
+	0x8cc:	push        Infinity
+	0x8cd:	push        Infinity
+	0x8ce:	push        Infinity
+	0x8cf:	neg         
+	0x8d0:	push        0
+	0x8d1:	neg         
+	0x8d2:	call        func_l
+	0x8d3:	push        global_l
+	0x8d4:	push        0
+	0x8d5:	neg         
+	0x8d6:	push        Infinity
+	0x8d7:	push        Infinity
+	0x8d8:	push        Infinity
+	0x8d9:	call        func_l
+	0x8da:	push        global_l
+	0x8db:	push        0
+	0x8dc:	neg         
+	0x8dd:	push        Infinity
+	0x8de:	push        0
+	0x8df:	push        Infinity
+	0x8e0:	neg         
+	0x8e1:	call        func_l
+	0x8e2:	push        global_l
+	0x8e3:	push        0
+	0x8e4:	neg         
+	0x8e5:	push        0
+	0x8e6:	neg         
+	0x8e7:	push        Infinity
+	0x8e8:	neg         
+	0x8e9:	push        0
+	0x8ea:	neg         
+	0x8eb:	call        func_l
+	0x8ec:	push        global_l
+	0x8ed:	push        0
+	0x8ee:	push        Infinity
+	0x8ef:	neg         
+	0x8f0:	push        0
+	0x8f1:	push        Infinity
+	0x8f2:	call        func_l
+	0x8f3:	push        global_l
+	0x8f4:	push        Infinity
+	0x8f5:	neg         
+	0x8f6:	push        Infinity
+	0x8f7:	neg         
+	0x8f8:	push        0
+	0x8f9:	neg         
+	0x8fa:	push        Infinity
+	0x8fb:	call        func_l
+	0x8fc:	push        global_l
+	0x8fd:	push        Infinity
+	0x8fe:	push        Infinity
+	0x8ff:	neg         
+	0x900:	push        0
+	0x901:	neg         
+	0x902:	push        0
+	0x903:	neg         
+	0x904:	call        func_l
+	0x905:	push        global_l
+	0x906:	push        0
+	0x907:	push        Infinity
+	0x908:	neg         
+	0x909:	push        0
+	0x90a:	neg         
+	0x90b:	push        Infinity
+	0x90c:	call        func_l
+	0x90d:	push        global_l
+	0x90e:	push        Infinity
+	0x90f:	push        0
+	0x910:	push        0
+	0x911:	push        Infinity
+	0x912:	call        func_l
+	0x913:	push        global_l
+	0x914:	push        Infinity
+	0x915:	neg         
+	0x916:	push        Infinity
+	0x917:	push        Infinity
+	0x918:	neg         
+	0x919:	push        0
+	0x91a:	call        func_l
+	0x91b:	push        global_l
+	0x91c:	push        Infinity
+	0x91d:	neg         
+	0x91e:	push        0
+	0x91f:	neg         
+	0x920:	push        Infinity
+	0x921:	push        0
+	0x922:	neg         
+	0x923:	call        func_l
+	0x924:	push        global_l
+	0x925:	push        Infinity
+	0x926:	neg         
+	0x927:	push        Infinity
+	0x928:	push        Infinity
+	0x929:	neg         
+	0x92a:	push        Infinity
+	0x92b:	call        func_l
+	0x92c:	push        global_l
+	0x92d:	push        0
+	0x92e:	push        Infinity
+	0x92f:	neg         
+	0x930:	push        0
+	0x931:	push        0
+	0x932:	neg         
+	0x933:	call        func_l
+	0x934:	push        global_l
+	0x935:	push        Infinity
+	0x936:	push        0
+	0x937:	push        0
+	0x938:	neg         
+	0x939:	push        Infinity
+	0x93a:	call        func_l
+	0x93b:	push        global_l
+	0x93c:	push        0
+	0x93d:	neg         
+	0x93e:	push        0
+	0x93f:	neg         
+	0x940:	push        0
+	0x941:	neg         
+	0x942:	push        Infinity
+	0x943:	call        func_l
+	0x944:	push        global_l
+	0x945:	push        Infinity
+	0x946:	push        Infinity
+	0x947:	push        0
+	0x948:	neg         
+	0x949:	push        Infinity
+	0x94a:	neg         
+	0x94b:	call        func_l
+	0x94c:	push        global_l
+	0x94d:	push        0
+	0x94e:	push        Infinity
+	0x94f:	neg         
+	0x950:	push        Infinity
+	0x951:	push        0
+	0x952:	neg         
+	0x953:	call        func_l
+	0x954:	push        global_l
+	0x955:	push        Infinity
+	0x956:	push        0
+	0x957:	neg         
+	0x958:	push        Infinity
+	0x959:	neg         
+	0x95a:	push        0
+	0x95b:	neg         
+	0x95c:	call        func_l
+	0x95d:	push        global_l
+	0x95e:	push        Infinity
+	0x95f:	push        Infinity
+	0x960:	push        Infinity
+	0x961:	neg         
+	0x962:	push        Infinity
+	0x963:	call        func_l
+	0x964:	push        global_l
+	0x965:	push        Infinity
+	0x966:	push        Infinity
+	0x967:	push        Infinity
+	0x968:	neg         
+	0x969:	push        0
+	0x96a:	call        func_l
+	0x96b:	push        global_l
+	0x96c:	push        Infinity
+	0x96d:	push        0
+	0x96e:	neg         
+	0x96f:	push        0
+	0x970:	neg         
+	0x971:	push        0
+	0x972:	call        func_l
+	0x973:	push        global_l
+	0x974:	push        0
+	0x975:	neg         
+	0x976:	push        0
+	0x977:	neg         
+	0x978:	push        Infinity
+	0x979:	push        0
+	0x97a:	call        func_l
+	0x97b:	push        global_l
+	0x97c:	push        0
+	0x97d:	push        0
+	0x97e:	push        Infinity
+	0x97f:	push        0
+	0x980:	neg         
+	0x981:	call        func_l
+	0x982:	push        global_l
+	0x983:	push        0
+	0x984:	neg         
+	0x985:	push        Infinity
+	0x986:	push        Infinity
+	0x987:	push        0
+	0x988:	call        func_l
+	0x989:	push        global_l
+	0x98a:	push        Infinity
+	0x98b:	neg         
+	0x98c:	push        Infinity
+	0x98d:	push        0
+	0x98e:	neg         
+	0x98f:	push        Infinity
+	0x990:	neg         
+	0x991:	call        func_l
+	0x992:	push        global_l
+	0x993:	push        Infinity
+	0x994:	neg         
+	0x995:	push        Infinity
+	0x996:	neg         
+	0x997:	push        Infinity
+	0x998:	neg         
+	0x999:	push        Infinity
+	0x99a:	neg         
+	0x99b:	call        func_l
+	0x99c:	push        global_l
+	0x99d:	push        Infinity
+	0x99e:	neg         
+	0x99f:	push        0
+	0x9a0:	neg         
+	0x9a1:	push        0
+	0x9a2:	neg         
+	0x9a3:	push        0
+	0x9a4:	call        func_l
+	0x9a5:	push        global_l
+	0x9a6:	push        0
+	0x9a7:	push        0
+	0x9a8:	push        Infinity
+	0x9a9:	neg         
+	0x9aa:	push        0
+	0x9ab:	neg         
+	0x9ac:	call        func_l
+	0x9ad:	push        global_l
+	0x9ae:	push        Infinity
+	0x9af:	push        0
+	0x9b0:	push        Infinity
+	0x9b1:	push        Infinity
+	0x9b2:	call        func_l
+	0x9b3:	push        global_l
+	0x9b4:	push        Infinity
+	0x9b5:	push        0
+	0x9b6:	push        0
+	0x9b7:	neg         
+	0x9b8:	push        0
+	0x9b9:	call        func_l
+	0x9ba:	push        global_l
+	0x9bb:	push        0
+	0x9bc:	neg         
+	0x9bd:	push        Infinity
+	0x9be:	push        0
+	0x9bf:	push        0
+	0x9c0:	neg         
+	0x9c1:	call        func_l
+	0x9c2:	push        global_l
+	0x9c3:	push        Infinity
+	0x9c4:	neg         
+	0x9c5:	push        Infinity
+	0x9c6:	neg         
+	0x9c7:	push        Infinity
+	0x9c8:	push        Infinity
+	0x9c9:	call        func_l
+	0x9ca:	push        global_l
+	0x9cb:	push        0
+	0x9cc:	push        0
+	0x9cd:	push        Infinity
+	0x9ce:	push        Infinity
+	0x9cf:	call        func_l
+	0x9d0:	push        global_l
+	0x9d1:	push        0
+	0x9d2:	push        Infinity
+	0x9d3:	push        Infinity
+	0x9d4:	push        0
+	0x9d5:	call        func_l
+	0x9d6:	push        global_l
+	0x9d7:	push        0
+	0x9d8:	neg         
+	0x9d9:	push        Infinity
+	0x9da:	neg         
+	0x9db:	push        0
+	0x9dc:	push        0
+	0x9dd:	call        func_l
+	0x9de:	push        global_l
+	0x9df:	push        0
+	0x9e0:	neg         
+	0x9e1:	push        Infinity
+	0x9e2:	push        0
+	0x9e3:	neg         
+	0x9e4:	push        Infinity
+	0x9e5:	neg         
+	0x9e6:	call        func_l
+	0x9e7:	push        global_l
+	0x9e8:	push        0
+	0x9e9:	push        0
+	0x9ea:	push        Infinity
+	0x9eb:	neg         
+	0x9ec:	push        Infinity
+	0x9ed:	neg         
+	0x9ee:	call        func_l
+	0x9ef:	push        global_l
+	0x9f0:	push        0
+	0x9f1:	push        0
+	0x9f2:	neg         
+	0x9f3:	push        Infinity
+	0x9f4:	neg         
+	0x9f5:	push        Infinity
+	0x9f6:	neg         
+	0x9f7:	call        func_l
+	0x9f8:	push        global_l
+	0x9f9:	push        0
+	0x9fa:	push        0
+	0x9fb:	push        0
+	0x9fc:	push        Infinity
+	0x9fd:	neg         
+	0x9fe:	call        func_l
+	0x9ff:	push        global_l
+	0xa00:	push        Infinity
+	0xa01:	neg         
+	0xa02:	push        Infinity
+	0xa03:	neg         
+	0xa04:	push        0
+	0xa05:	push        Infinity
+	0xa06:	call        func_l
+	0xa07:	push        global_l
+	0xa08:	push        0
+	0xa09:	neg         
+	0xa0a:	push        Infinity
+	0xa0b:	neg         
+	0xa0c:	push        0
+	0xa0d:	push        Infinity
+	0xa0e:	neg         
+	0xa0f:	call        func_l
+	0xa10:	push        global_l
+	0xa11:	push        Infinity
+	0xa12:	neg         
+	0xa13:	push        Infinity
+	0xa14:	neg         
+	0xa15:	push        0
+	0xa16:	neg         
+	0xa17:	push        Infinity
+	0xa18:	neg         
+	0xa19:	call        func_l
+	0xa1a:	push        global_l
+	0xa1b:	push        0
+	0xa1c:	push        Infinity
+	0xa1d:	push        Infinity
+	0xa1e:	push        0
+	0xa1f:	neg         
+	0xa20:	call        func_l
+	0xa21:	push        global_l
+	0xa22:	push        0
+	0xa23:	neg         
+	0xa24:	push        0
+	0xa25:	push        Infinity
+	0xa26:	neg         
+	0xa27:	push        Infinity
+	0xa28:	call        func_l
+	0xa29:	push        global_l
+	0xa2a:	push        Infinity
+	0xa2b:	neg         
+	0xa2c:	push        0
+	0xa2d:	neg         
+	0xa2e:	push        0
+	0xa2f:	neg         
+	0xa30:	push        0
+	0xa31:	neg         
+	0xa32:	call        func_l
+	0xa33:	push        global_l
+	0xa34:	push        0
+	0xa35:	push        0
+	0xa36:	push        Infinity
+	0xa37:	neg         
+	0xa38:	push        0
+	0xa39:	call        func_l
+	0xa3a:	push        global_l
+	0xa3b:	push        0
+	0xa3c:	push        Infinity
+	0xa3d:	neg         
+	0xa3e:	push        0
+	0xa3f:	neg         
+	0xa40:	push        0
+	0xa41:	call        func_l
+	0xa42:	push        global_l
+	0xa43:	push        Infinity
+	0xa44:	neg         
+	0xa45:	push        Infinity
+	0xa46:	push        Infinity
+	0xa47:	neg         
+	0xa48:	push        0
+	0xa49:	neg         
+	0xa4a:	call        func_l
+	0xa4b:	push        global_l
+	0xa4c:	push        0
+	0xa4d:	push        Infinity
+	0xa4e:	push        0
+	0xa4f:	neg         
+	0xa50:	push        Infinity
+	0xa51:	call        func_l
+	0xa52:	push        global_l
+	0xa53:	push        Infinity
+	0xa54:	neg         
+	0xa55:	push        0
+	0xa56:	neg         
+	0xa57:	push        Infinity
+	0xa58:	push        Infinity
+	0xa59:	call        func_l
+	0xa5a:	push        global_l
+	0xa5b:	push        Infinity
+	0xa5c:	neg         
+	0xa5d:	push        0
+	0xa5e:	push        Infinity
+	0xa5f:	neg         
+	0xa60:	push        Infinity
+	0xa61:	call        func_l
+	0xa62:	push        global_l
+	0xa63:	push        Infinity
+	0xa64:	push        Infinity
+	0xa65:	push        0
+	0xa66:	push        0
+	0xa67:	call        func_l
+	0xa68:	push        global_l
+	0xa69:	push        Infinity
+	0xa6a:	neg         
+	0xa6b:	push        Infinity
+	0xa6c:	push        0
+	0xa6d:	push        Infinity
+	0xa6e:	call        func_l
+	0xa6f:	push        global_l
+	0xa70:	push        Infinity
+	0xa71:	push        Infinity
+	0xa72:	neg         
+	0xa73:	push        Infinity
+	0xa74:	neg         
+	0xa75:	push        Infinity
+	0xa76:	neg         
+	0xa77:	call        func_l
+	0xa78:	push        global_l
+	0xa79:	push        0
+	0xa7a:	neg         
+	0xa7b:	push        0
+	0xa7c:	neg         
+	0xa7d:	push        0
+	0xa7e:	neg         
+	0xa7f:	push        0
+	0xa80:	call        func_l
+	0xa81:	push        global_l
+	0xa82:	push        0
+	0xa83:	neg         
+	0xa84:	push        0
+	0xa85:	neg         
+	0xa86:	push        0
+	0xa87:	neg         
+	0xa88:	push        0
+	0xa89:	neg         
+	0xa8a:	call        func_l
+	0xa8b:	push        global_l
+	0xa8c:	push        Infinity
+	0xa8d:	neg         
+	0xa8e:	push        Infinity
+	0xa8f:	neg         
+	0xa90:	push        0
+	0xa91:	neg         
+	0xa92:	push        0
+	0xa93:	call        func_l
+	0xa94:	push        global_l
+	0xa95:	push        Infinity
+	0xa96:	neg         
+	0xa97:	push        0
+	0xa98:	push        0
+	0xa99:	neg         
+	0xa9a:	push        0
+	0xa9b:	call        func_l
+	0xa9c:	push        global_l
+	0xa9d:	push        0
+	0xa9e:	push        Infinity
+	0xa9f:	push        0
+	0xaa0:	push        Infinity
+	0xaa1:	call        func_l
+	0xaa2:	push        global_l
+	0xaa3:	push        Infinity
+	0xaa4:	neg         
+	0xaa5:	push        0
+	0xaa6:	neg         
+	0xaa7:	push        Infinity
+	0xaa8:	neg         
+	0xaa9:	push        Infinity
+	0xaaa:	neg         
+	0xaab:	call        func_l
+	0xaac:	push        global_l
+	0xaad:	push        0
+	0xaae:	neg         
+	0xaaf:	push        Infinity
+	0xab0:	neg         
+	0xab1:	push        Infinity
+	0xab2:	neg         
+	0xab3:	push        0
+	0xab4:	neg         
+	0xab5:	call        func_l
+	0xab6:	push        global_l
+	0xab7:	push        Infinity
+	0xab8:	neg         
+	0xab9:	push        0
+	0xaba:	neg         
+	0xabb:	push        Infinity
+	0xabc:	push        0
+	0xabd:	call        func_l
+	0xabe:	push        global_l
+	0xabf:	push        Infinity
+	0xac0:	neg         
+	0xac1:	push        0
+	0xac2:	push        0
+	0xac3:	push        Infinity
+	0xac4:	neg         
+	0xac5:	call        func_l
+	0xac6:	push        global_l
+	0xac7:	push        Infinity
+	0xac8:	push        Infinity
+	0xac9:	push        Infinity
+	0xaca:	push        Infinity
+	0xacb:	call        func_l
+	0xacc:	push        global_l
+	0xacd:	push        Infinity
+	0xace:	push        Infinity
+	0xacf:	push        0
+	0xad0:	neg         
+	0xad1:	push        0
+	0xad2:	neg         
+	0xad3:	call        func_l
+	0xad4:	push        global_l
+	0xad5:	push        0
+	0xad6:	push        Infinity
+	0xad7:	neg         
+	0xad8:	push        Infinity
+	0xad9:	push        Infinity
+	0xada:	neg         
+	0xadb:	call        func_l
+	0xadc:	push        global_l
+	0xadd:	pop         
+	0xade:	pop         
+	0xadf:	pop         
+	0xae0:	pop         
+	0xae1:	ret         
+
+function func_algorithm(param_0, param_1, param_2, param_3, param_4, param_5, param_6, param_7)
+	0xae3:	push        global_a
+	0xae4:	push        global_q
+	0xae5:	push        global_p
+	0xae6:	push        global_b
+	0xae7:	push        param_0
+	0xae8:	push        param_1
+	0xae9:	push        param_2
+	0xaea:	push        param_3
+	0xaeb:	call        func_xb
+	0xaec:	push        global_x
+	0xaed:	push        global_b
+	0xaee:	push        global_h
+	0xaef:	push        global_i
+	0xaf0:	push        global_j
+	0xaf1:	push        global_g
+	0xaf2:	push        param_4
+	0xaf3:	push        param_5
+	0xaf4:	push        param_6
+	0xaf5:	push        param_7
+	0xaf6:	call        func_xb
+	0xaf7:	push        global_x
+	0xaf8:	push        global_b
+	0xaf9:	push        global_f
+	0xafa:	push        global_e
+	0xafb:	push        global_n
+	0xafc:	push        global_o
+	0xafd:	push        param_3
+	0xafe:	push        param_2
+	0xaff:	push        param_1
+	0xb00:	push        param_0
+	0xb01:	call        func_xb
+	0xb02:	push        global_x
+	0xb03:	push        global_b
+	0xb04:	push        global_c
+	0xb05:	push        global_d
+	0xb06:	push        global_l
+	0xb07:	push        global_k
+	0xb08:	push        param_7
+	0xb09:	push        param_6
+	0xb0a:	push        param_5
+	0xb0b:	push        param_4
+	0xb0c:	call        func_xb
+	0xb0d:	push        global_x
+	0xb0e:	push        global_b
+	0xb0f:	push        global_a
+	0xb10:	push        global_b
+	0xb11:	push        global_c
+	0xb12:	push        global_d
+	0xb13:	push        param_4
+	0xb14:	push        param_5
+	0xb15:	push        param_6
+	0xb16:	push        param_7
+	0xb17:	call        func_gb4
+	0xb18:	push        global_g
+	0xb19:	push        global_b
+	0xb1a:	push        param_2
+	0xb1b:	push        param_0
+	0xb1c:	push        param_1
+	0xb1d:	push        param_2
+	0xb1e:	push        param_3
+	0xb1f:	push        global_n
+	0xb20:	push        global_o
+	0xb21:	push        global_p
+	0xb22:	push        global_q
+	0xb23:	call        func_gb4
+	0xb24:	push        global_g
+	0xb25:	push        global_b
+	0xb26:	push        param_2
+	0xb27:	call        func_xb
+	0xb28:	push        global_x
+	0xb29:	push        global_b
+	0xb2a:	push        global_i
+	0xb2b:	push        global_j
+	0xb2c:	push        global_k
+	0xb2d:	push        global_l
+	0xb2e:	push        param_0
+	0xb2f:	push        param_1
+	0xb30:	push        param_2
+	0xb31:	push        param_3
+	0xb32:	call        func_gb4
+	0xb33:	push        global_g
+	0xb34:	push        global_b
+	0xb35:	push        param_2
+	0xb36:	push        global_e
+	0xb37:	push        global_f
+	0xb38:	push        global_g
+	0xb39:	push        global_h
+	0xb3a:	push        param_4
+	0xb3b:	push        param_5
+	0xb3c:	push        param_6
+	0xb3d:	push        param_7
+	0xb3e:	call        func_gb4
+	0xb3f:	push        global_g
+	0xb40:	push        global_b
+	0xb41:	push        param_2
+	0xb42:	call        func_xb
+	0xb43:	push        global_x
+	0xb44:	push        global_b
+	0xb45:	push        param_0
+	0xb46:	push        param_1
+	0xb47:	push        param_2
+	0xb48:	push        param_3
+	0xb49:	call        func_al
+	0xb4a:	push        global_a
+	0xb4b:	push        global_l
+	0xb4c:	ret         

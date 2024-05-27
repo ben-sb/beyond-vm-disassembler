@@ -11,4 +11,8 @@ fn main() {
     let mut disassembler = Disassembler::new(bytecode);
     disassembler.disassemble();
     disassembler.disassemble_snippet("algorithm".to_string(), algo_bytecode);
+
+    let disassembly = disassembler.get_disassembly();
+    fs::write("output/disassembly.txt", disassembly.join("\n"))
+        .expect("Failed to write disassembly to file");
 }

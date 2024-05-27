@@ -1,8 +1,9 @@
 use std::{cmp::min, collections::HashSet};
 
 use super::{
+    function::Function,
     instruction::{Instruction, Mnemonic},
-    operand::{Function, GlobalVariable, Literal, Operand, Parameter, Variable},
+    operand::{GlobalVariable, Literal, Operand, Parameter},
 };
 use lazy_static::lazy_static;
 
@@ -59,6 +60,18 @@ impl Disassembler {
             Some(i) => self.functions[i].add_instruction(instr),
             None => panic!("Tried to add an instruction when there is no current function"),
         };
+    }
+
+    /// Returns the disassembly as a vector of disassembly lines.
+    pub fn get_disassembly(&self) -> Vec<String> {
+        let mut dis: Vec<String> = Vec::new();
+
+        for func in &self.functions {
+            dis.append(&mut func.get_disassembly());
+            dis.push(String::from("")); // empty line to separate functions
+        }
+
+        dis
     }
 
     /// Disassembles a new snippet of bytecode.

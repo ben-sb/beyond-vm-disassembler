@@ -55,4 +55,20 @@ impl Instruction {
             operands,
         }
     }
+
+    /// Returns a string representation of the instruction.
+    pub fn to_string(&self) -> String {
+        let operand_str = self
+            .operands
+            .iter()
+            .map(|op| op.to_string())
+            .collect::<Vec<String>>()
+            .join(", ");
+        format!(
+            "0x{:x}:\t{:<12}{}",
+            self.address,
+            self.mnemonic.to_string(),
+            operand_str
+        )
+    }
 }
