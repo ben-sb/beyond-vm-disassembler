@@ -1,5 +1,6 @@
 use std::fs;
 
+use disassembler::operand::Variable;
 use symbolic::state_manager::StateManager;
 
 use crate::disassembler::disassembler::Disassembler;
@@ -21,6 +22,7 @@ fn main() {
 
     // symbolically execute each function
     for function in disassembler.functions() {
+        println!("*** Symbolically executing {} ***\n", function.name());
         let mut manager = StateManager::new(function);
         manager.explore();
     }

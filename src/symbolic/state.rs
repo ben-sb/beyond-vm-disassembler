@@ -198,11 +198,13 @@ impl State {
                 }
 
                 let call = CallExpressionSymbol::new(Box::new(callee), arguments);
-                println!("{}", call);
+                println!("Call expression:");
+                println!("{}\n", call);
                 self.stack.push(Symbol::CallExpressionSymbol(call))
             }
             Mnemonic::RET => {
-                println!("{}", self.stack);
+                println!("Stack on function return:");
+                println!("{}\n\n\n\n", self.stack);
                 self.status = Status::Terminated;
             }
         }
