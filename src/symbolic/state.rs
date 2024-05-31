@@ -97,7 +97,6 @@ impl State {
 
     /// Symbolically executes an instruction.
     fn execute(&mut self, instruction: &Instruction) -> Result<(), Box<dyn Error>> {
-        println!("Stepping state {}", self.id);
         self.pos += 1;
 
         match instruction.mnemonic() {
@@ -199,11 +198,11 @@ impl State {
                 }
 
                 let call = CallExpressionSymbol::new(Box::new(callee), arguments);
-                println!("{:?}", call);
+                println!("{}", call);
                 self.stack.push(Symbol::CallExpressionSymbol(call))
             }
             Mnemonic::RET => {
-                println!("{:?}", self.stack);
+                println!("{}", self.stack);
                 self.status = Status::Terminated;
             }
         }

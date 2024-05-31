@@ -1,3 +1,5 @@
+use std::fmt::Display;
+
 use super::symbol::Symbol;
 
 #[derive(Debug)]
@@ -34,5 +36,21 @@ impl Stack {
         } else {
             None
         }
+    }
+}
+
+impl Display for Stack {
+    /// Writes a readable version of the stack.
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        write!(f, "[")?;
+        for (index, element) in self.elements.iter().enumerate() {
+            let separator = if index < self.elements.len() - 1 {
+                ", "
+            } else {
+                ""
+            };
+            write!(f, "{}{}", element, separator)?;
+        }
+        write!(f, "]")
     }
 }

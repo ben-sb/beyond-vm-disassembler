@@ -60,7 +60,6 @@ impl Disassembler {
 
     /// Adds an instruction to the current function being disassembled.
     fn add_instruction(&mut self, instr: Instruction) {
-        println!("{:?}", instr);
         match self.current_function_index {
             Some(i) => self.functions[i].add_instruction(instr),
             None => panic!("Tried to add an instruction when there is no current function"),
