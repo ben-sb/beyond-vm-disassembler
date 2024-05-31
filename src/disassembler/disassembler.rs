@@ -36,6 +36,11 @@ impl Disassembler {
         }
     }
 
+    /// Returns the vector of functions.
+    pub fn functions(self) -> Vec<Function> {
+        self.functions
+    }
+
     /// Reads the next byte from the bytecode and advances the position.
     fn read_byte(&mut self) -> char {
         let byte = self.bytecode[self.pos];

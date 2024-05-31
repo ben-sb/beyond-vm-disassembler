@@ -1,5 +1,7 @@
 use std::fs;
 
+use symbolic::state_manager::StateManager;
+
 use crate::disassembler::disassembler::Disassembler;
 
 pub mod disassembler;
@@ -16,4 +18,10 @@ fn main() {
     let disassembly = disassembler.get_disassembly();
     fs::write("output/disassembly.txt", disassembly.join("\n"))
         .expect("Failed to write disassembly to file");
+
+    // symbolically execute each function
+    for function in disassembler.functions() {
+        let mut manager = StateManager::new(function);
+        manager.explore();
+    }
 }

@@ -30,6 +30,11 @@ impl Function {
         &self.id
     }
 
+    /// Returns the instructions within the function.
+    pub fn instructions(self) -> Vec<Instruction> {
+        self.instructions
+    }
+
     /// Adds an instruction to the function.
     pub fn add_instruction(&mut self, instr: Instruction) {
         self.instructions.push(instr);
