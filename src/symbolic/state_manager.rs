@@ -15,7 +15,9 @@ pub struct StateManager {
 impl StateManager {
     /// Creates a new state manager.
     pub fn new(function: Function) -> StateManager {
-        let entry_state = State::new(0, 0);
+        let mut entry_state = State::new(0, 0);
+        entry_state.push_params(function.num_params());
+
         let mut active_state_ids = HashSet::new();
         active_state_ids.insert(entry_state.id());
 

@@ -8,13 +8,13 @@ pub struct Function {
     address: usize,
     id: String,
     formatted_name: String,
-    num_params: u8,
+    num_params: usize,
     instructions: Vec<Instruction>,
 }
 
 impl Function {
     /// Creates a new function.
-    pub fn new(address: usize, id: String, num_params: u8) -> Function {
+    pub fn new(address: usize, id: String, num_params: usize) -> Function {
         let formatted_name = format!("func_{id}");
         Function {
             address,
@@ -28,6 +28,11 @@ impl Function {
     /// Returns the ID of the function.
     pub fn id(&self) -> &str {
         &self.id
+    }
+
+    /// Returns the number of parameters the function has.
+    pub fn num_params(&self) -> usize {
+        self.num_params
     }
 
     /// Returns the instructions within the function.
