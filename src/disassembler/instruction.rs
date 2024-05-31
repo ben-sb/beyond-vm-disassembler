@@ -56,6 +56,21 @@ impl Instruction {
         }
     }
 
+    /// Returns the address of the instruction.
+    pub fn address(&self) -> &usize {
+        &self.address
+    }
+
+    /// Returns the mnemonic of the instruction.
+    pub fn mnemonic(&self) -> &Mnemonic {
+        &self.mnemonic
+    }
+
+    /// Returns the operands of the instruction.
+    pub fn operands(&self) -> &Vec<Operand> {
+        &self.operands
+    }
+
     /// Returns a string representation of the instruction.
     pub fn to_string(&self) -> String {
         let operand_str = self

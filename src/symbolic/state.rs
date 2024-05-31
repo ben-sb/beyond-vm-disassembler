@@ -1,4 +1,4 @@
-use crate::disassembler::instruction::Instruction;
+use crate::disassembler::instruction::{Instruction, Mnemonic};
 
 use super::{stack::Stack, symbol::Symbol};
 use std::collections::HashMap;
@@ -49,6 +49,12 @@ impl State {
     /// Executes a single instruction.
     pub fn step(&mut self, instruction: &Instruction) {
         println!("Stepping state {}", self.id);
+
+        match instruction.mnemonic() {
+            Mnemonic::PUSH => {}
+            _ => {}
+        }
+
         self.status = Status::Terminated;
     }
 }
